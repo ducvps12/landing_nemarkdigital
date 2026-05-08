@@ -180,59 +180,81 @@ export default function Header({ onOpenContactModal }: HeaderProps) {
                                             </div>
 
                                             {/* Right Column */}
-                                            <div className="space-y-10">
+                                            <div className="space-y-8">
                                                 {/* SEO & Marketing Group */}
                                                 <div>
-                                                    <div className="flex items-center gap-3 mb-5 border-b border-slate-100 pb-3">
-                                                        <span className="material-icons-outlined text-primary text-[20px]">trending_up</span>
+                                                    <div className="flex items-center gap-3 mb-4 px-2">
+                                                        <div className="flex w-8 h-8 rounded-md bg-emerald-50 items-center justify-center">
+                                                            <span className="material-icons-outlined text-emerald-600 text-[18px]">trending_up</span>
+                                                        </div>
                                                         <span className="text-xs font-bold text-slate-800 uppercase tracking-widest">{t('servicesMenu.seoMarketing')}</span>
                                                     </div>
-                                                    <div className="space-y-3">
-                                                        <Link href="/services/seo" className="group flex items-start gap-4 hover:-translate-y-0.5 transition-all duration-200">
-                                                            <span className="material-icons-outlined text-slate-400 group-hover:text-primary text-[22px] transition-colors mt-0.5">search</span>
-                                                            <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors leading-relaxed">{t('servicesMenu.seoOverall')}</span>
+                                                    <div className="space-y-1">
+                                                        <Link href="/services/seo" className="group flex items-center gap-4 p-2.5 rounded-xl hover:bg-slate-50 transition-all duration-200">
+                                                            <div className="flex w-9 h-9 shrink-0 items-center justify-center rounded-lg bg-slate-50 border border-slate-100 group-hover:border-emerald-200 group-hover:bg-emerald-50 transition-colors">
+                                                                <span className="material-icons-outlined text-slate-400 group-hover:text-emerald-600 text-[20px] transition-colors">search</span>
+                                                            </div>
+                                                            <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors">{t('servicesMenu.seoOverall')}</span>
                                                         </Link>
-                                                        <Link href="#" className="group flex items-start gap-4 hover:-translate-y-0.5 transition-all duration-200">
-                                                            <span className="material-icons-outlined text-slate-400 group-hover:text-primary text-[22px] transition-colors mt-0.5">assessment</span>
-                                                            <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors leading-relaxed">{t('servicesMenu.seoAudit')}</span>
+                                                        <Link href="#" className="group flex items-center gap-4 p-2.5 rounded-xl hover:bg-slate-50 transition-all duration-200">
+                                                            <div className="flex w-9 h-9 shrink-0 items-center justify-center rounded-lg bg-slate-50 border border-slate-100 group-hover:border-emerald-200 group-hover:bg-emerald-50 transition-colors">
+                                                                <span className="material-icons-outlined text-slate-400 group-hover:text-emerald-600 text-[20px] transition-colors">assessment</span>
+                                                            </div>
+                                                            <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors">{t('servicesMenu.seoAudit')}</span>
                                                         </Link>
                                                     </div>
                                                 </div>
 
                                                 {/* Infrastructure Group */}
                                                 <div>
-                                                    <div className="flex items-center gap-3 mb-5 border-b border-slate-100 pb-3">
-                                                        <span className="material-icons-outlined text-primary text-[20px]">cloud</span>
+                                                    <div className="flex items-center gap-3 mb-4 px-2">
+                                                        <div className="flex w-8 h-8 rounded-md bg-violet-50 items-center justify-center">
+                                                            <span className="material-icons-outlined text-violet-600 text-[18px]">cloud</span>
+                                                        </div>
                                                         <span className="text-xs font-bold text-slate-800 uppercase tracking-widest">{t('servicesMenu.infrastructure')}</span>
                                                     </div>
-                                                    <div className="space-y-3">
-                                                        <Link href="/services/domain-hosting" className="group flex items-start gap-4 hover:-translate-y-0.5 transition-all duration-200">
-                                                            <span className="material-icons-outlined text-slate-400 group-hover:text-primary text-[22px] transition-colors mt-0.5">dns</span>
-                                                            <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors leading-relaxed">{t('servicesMenu.domainHosting')}</span>
+                                                    <div className="space-y-1">
+                                                        <Link href="/services/domain-hosting" className="group flex items-center gap-4 p-2.5 rounded-xl hover:bg-slate-50 transition-all duration-200">
+                                                            <div className="flex w-9 h-9 shrink-0 items-center justify-center rounded-lg bg-slate-50 border border-slate-100 group-hover:border-violet-200 group-hover:bg-violet-50 transition-colors">
+                                                                <span className="material-icons-outlined text-slate-400 group-hover:text-violet-600 text-[20px] transition-colors">dns</span>
+                                                            </div>
+                                                            <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors">{t('servicesMenu.domainHosting')}</span>
                                                         </Link>
-                                                        <Link href="/services/business-email" className="group flex items-start gap-4 hover:-translate-y-0.5 transition-all duration-200">
-                                                            <span className="material-icons-outlined text-slate-400 group-hover:text-primary text-[22px] transition-colors mt-0.5">email</span>
-                                                            <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors leading-relaxed">{t('servicesMenu.businessEmail')}</span>
+                                                        <Link href="/services/business-email" className="group flex items-center gap-4 p-2.5 rounded-xl hover:bg-slate-50 transition-all duration-200">
+                                                            <div className="flex w-9 h-9 shrink-0 items-center justify-center rounded-lg bg-slate-50 border border-slate-100 group-hover:border-violet-200 group-hover:bg-violet-50 transition-colors">
+                                                                <span className="material-icons-outlined text-slate-400 group-hover:text-violet-600 text-[20px] transition-colors">email</span>
+                                                            </div>
+                                                            <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors">{t('servicesMenu.businessEmail')}</span>
                                                         </Link>
-                                                        <Link href="/services/vps" className="group flex items-start gap-4 hover:-translate-y-0.5 transition-all duration-200">
-                                                            <span className="material-icons-outlined text-slate-400 group-hover:text-primary text-[22px] transition-colors mt-0.5">storage</span>
-                                                            <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors leading-relaxed">{t('servicesMenu.vps')}</span>
+                                                        <Link href="/services/vps" className="group flex items-center gap-4 p-2.5 rounded-xl hover:bg-slate-50 transition-all duration-200">
+                                                            <div className="flex w-9 h-9 shrink-0 items-center justify-center rounded-lg bg-slate-50 border border-slate-100 group-hover:border-violet-200 group-hover:bg-violet-50 transition-colors">
+                                                                <span className="material-icons-outlined text-slate-400 group-hover:text-violet-600 text-[20px] transition-colors">storage</span>
+                                                            </div>
+                                                            <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors">{t('servicesMenu.vps')}</span>
                                                         </Link>
-                                                        <Link href="/services/proxy" className="group flex items-start gap-4 hover:-translate-y-0.5 transition-all duration-200">
-                                                            <span className="material-icons-outlined text-slate-400 group-hover:text-primary text-[22px] transition-colors mt-0.5">vpn_key</span>
-                                                            <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors leading-relaxed">{t('servicesMenu.proxy')}</span>
+                                                        <Link href="/services/proxy" className="group flex items-center gap-4 p-2.5 rounded-xl hover:bg-slate-50 transition-all duration-200">
+                                                            <div className="flex w-9 h-9 shrink-0 items-center justify-center rounded-lg bg-slate-50 border border-slate-100 group-hover:border-violet-200 group-hover:bg-violet-50 transition-colors">
+                                                                <span className="material-icons-outlined text-slate-400 group-hover:text-violet-600 text-[20px] transition-colors">vpn_key</span>
+                                                            </div>
+                                                            <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors">{t('servicesMenu.proxy')}</span>
                                                         </Link>
-                                                        <Link href="/services/infra-management" className="group flex items-start gap-4 hover:-translate-y-0.5 transition-all duration-200">
-                                                            <span className="material-icons-outlined text-slate-400 group-hover:text-primary text-[22px] transition-colors mt-0.5">settings_ethernet</span>
-                                                            <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors leading-relaxed">{t('servicesMenu.infraManagement')}</span>
+                                                        <Link href="/services/infra-management" className="group flex items-center gap-4 p-2.5 rounded-xl hover:bg-slate-50 transition-all duration-200">
+                                                            <div className="flex w-9 h-9 shrink-0 items-center justify-center rounded-lg bg-slate-50 border border-slate-100 group-hover:border-violet-200 group-hover:bg-violet-50 transition-colors">
+                                                                <span className="material-icons-outlined text-slate-400 group-hover:text-violet-600 text-[20px] transition-colors">settings_ethernet</span>
+                                                            </div>
+                                                            <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors">{t('servicesMenu.infraManagement')}</span>
                                                         </Link>
-                                                        <Link href="/services/system-security" className="group flex items-start gap-4 hover:-translate-y-0.5 transition-all duration-200">
-                                                            <span className="material-icons-outlined text-slate-400 group-hover:text-primary text-[22px] transition-colors mt-0.5">security</span>
-                                                            <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors leading-relaxed">{t('servicesMenu.systemSecurity')}</span>
+                                                        <Link href="/services/system-security" className="group flex items-center gap-4 p-2.5 rounded-xl hover:bg-slate-50 transition-all duration-200">
+                                                            <div className="flex w-9 h-9 shrink-0 items-center justify-center rounded-lg bg-slate-50 border border-slate-100 group-hover:border-violet-200 group-hover:bg-violet-50 transition-colors">
+                                                                <span className="material-icons-outlined text-slate-400 group-hover:text-violet-600 text-[20px] transition-colors">security</span>
+                                                            </div>
+                                                            <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors">{t('servicesMenu.systemSecurity')}</span>
                                                         </Link>
-                                                        <Link href="/services/vps-setup" className="group flex items-start gap-4 hover:-translate-y-0.5 transition-all duration-200">
-                                                            <span className="material-icons-outlined text-slate-400 group-hover:text-primary text-[22px] transition-colors mt-0.5">terminal</span>
-                                                            <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors leading-relaxed">{t('servicesMenu.vpsSetup')}</span>
+                                                        <Link href="/services/vps-setup" className="group flex items-center gap-4 p-2.5 rounded-xl hover:bg-slate-50 transition-all duration-200">
+                                                            <div className="flex w-9 h-9 shrink-0 items-center justify-center rounded-lg bg-slate-50 border border-slate-100 group-hover:border-violet-200 group-hover:bg-violet-50 transition-colors">
+                                                                <span className="material-icons-outlined text-slate-400 group-hover:text-violet-600 text-[20px] transition-colors">terminal</span>
+                                                            </div>
+                                                            <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors">{t('servicesMenu.vpsSetup')}</span>
                                                         </Link>
                                                     </div>
                                                 </div>
@@ -260,28 +282,41 @@ export default function Header({ onOpenContactModal }: HeaderProps) {
                                 {/* Invisible hover bridge */}
                                 <div className="absolute -top-6 left-0 right-0 h-6 bg-transparent" />
                                 
-                                <div className="bg-white shadow-2xl rounded-2xl border border-slate-100 overflow-hidden relative">
-                                    <div className="p-6">
-                                        <div className="space-y-3">
-                                            <Link href="/solutions/sme" className="group flex items-start gap-4 hover:-translate-y-0.5 transition-all duration-200">
-                                                <span className="material-icons-outlined text-slate-400 group-hover:text-primary text-[22px] transition-colors mt-0.5">business</span>
-                                                <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors leading-relaxed">{t('solutionsMenu.sme')}</span>
+                                <div className="bg-white shadow-2xl rounded-2xl border border-slate-200 overflow-hidden relative">
+                                    {/* Top accent bar */}
+                                    <div className="absolute top-0 left-0 right-0 h-[4px] bg-linear-to-r from-primary to-blue-500" />
+                                    
+                                    <div className="p-6 pt-7">
+                                        <div className="space-y-1">
+                                            <Link href="/solutions/sme" className="group flex items-center gap-4 p-2.5 rounded-xl hover:bg-slate-50 transition-all duration-200">
+                                                <div className="flex w-9 h-9 shrink-0 items-center justify-center rounded-lg bg-slate-50 border border-slate-100 group-hover:border-blue-200 group-hover:bg-blue-50 transition-colors">
+                                                    <span className="material-icons-outlined text-slate-400 group-hover:text-primary text-[20px] transition-colors">business</span>
+                                                </div>
+                                                <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors">{t('solutionsMenu.sme')}</span>
                                             </Link>
-                                            <Link href="/solutions/startup" className="group flex items-start gap-4 hover:-translate-y-0.5 transition-all duration-200">
-                                                <span className="material-icons-outlined text-slate-400 group-hover:text-primary text-[22px] transition-colors mt-0.5">rocket_launch</span>
-                                                <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors leading-relaxed">{t('solutionsMenu.startup')}</span>
+                                            <Link href="/solutions/startup" className="group flex items-center gap-4 p-2.5 rounded-xl hover:bg-slate-50 transition-all duration-200">
+                                                <div className="flex w-9 h-9 shrink-0 items-center justify-center rounded-lg bg-slate-50 border border-slate-100 group-hover:border-orange-200 group-hover:bg-orange-50 transition-colors">
+                                                    <span className="material-icons-outlined text-slate-400 group-hover:text-orange-500 text-[20px] transition-colors">rocket_launch</span>
+                                                </div>
+                                                <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors">{t('solutionsMenu.startup')}</span>
                                             </Link>
-                                            <Link href="/solutions/online-sales" className="group flex items-start gap-4 hover:-translate-y-0.5 transition-all duration-200">
-                                                <span className="material-icons-outlined text-slate-400 group-hover:text-primary text-[22px] transition-colors mt-0.5">shopping_cart</span>
-                                                <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors leading-relaxed">{t('solutionsMenu.onlineSales')}</span>
+                                            <Link href="/solutions/online-sales" className="group flex items-center gap-4 p-2.5 rounded-xl hover:bg-slate-50 transition-all duration-200">
+                                                <div className="flex w-9 h-9 shrink-0 items-center justify-center rounded-lg bg-slate-50 border border-slate-100 group-hover:border-emerald-200 group-hover:bg-emerald-50 transition-colors">
+                                                    <span className="material-icons-outlined text-slate-400 group-hover:text-emerald-600 text-[20px] transition-colors">shopping_cart</span>
+                                                </div>
+                                                <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors">{t('solutionsMenu.onlineSales')}</span>
                                             </Link>
-                                            <Link href="/solutions/digital-conversion" className="group flex items-start gap-4 hover:-translate-y-0.5 transition-all duration-200">
-                                                <span className="material-icons-outlined text-slate-400 group-hover:text-primary text-[22px] transition-colors mt-0.5">sync_alt</span>
-                                                <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors leading-relaxed">{t('solutionsMenu.digitalConversion')}</span>
+                                            <Link href="/solutions/digital-conversion" className="group flex items-center gap-4 p-2.5 rounded-xl hover:bg-slate-50 transition-all duration-200">
+                                                <div className="flex w-9 h-9 shrink-0 items-center justify-center rounded-lg bg-slate-50 border border-slate-100 group-hover:border-violet-200 group-hover:bg-violet-50 transition-colors">
+                                                    <span className="material-icons-outlined text-slate-400 group-hover:text-violet-600 text-[20px] transition-colors">sync_alt</span>
+                                                </div>
+                                                <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors">{t('solutionsMenu.digitalConversion')}</span>
                                             </Link>
-                                            <Link href="/solutions/digital-branding" className="group flex items-start gap-4 hover:-translate-y-0.5 transition-all duration-200">
-                                                <span className="material-icons-outlined text-slate-400 group-hover:text-primary text-[22px] transition-colors mt-0.5">star</span>
-                                                <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors leading-relaxed">{t('solutionsMenu.digitalBranding')}</span>
+                                            <Link href="/solutions/digital-branding" className="group flex items-center gap-4 p-2.5 rounded-xl hover:bg-slate-50 transition-all duration-200">
+                                                <div className="flex w-9 h-9 shrink-0 items-center justify-center rounded-lg bg-slate-50 border border-slate-100 group-hover:border-amber-200 group-hover:bg-amber-50 transition-colors">
+                                                    <span className="material-icons-outlined text-slate-400 group-hover:text-amber-500 text-[20px] transition-colors">star</span>
+                                                </div>
+                                                <span className="text-sm font-medium text-slate-600 group-hover:text-primary transition-colors">{t('solutionsMenu.digitalBranding')}</span>
                                             </Link>
                                         </div>
                                     </div>

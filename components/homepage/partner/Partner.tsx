@@ -7,11 +7,11 @@ export default function Partner() {
         { name: 'Cloundinary', logo: 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Cloudinary_logo_blue_0720_2x.png' },
         { name: 'Supabase', logo: 'https://brandlogos.net/wp-content/uploads/2025/07/supabase-logo_brandlogos.net_wahxg-scaled.png' },
         { name: 'VNPAY', logo: 'https://cdn.haitrieu.com/wp-content/uploads/2022/10/Logo-VNPAY-QR-1.png' },
-        { name: 'Google', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png' },
+        { name: 'Google', logo: '/partners/google.svg' },
         { name: 'Amazon AWS', logo: 'https://cdn.worldvectorlogo.com/logos/amazon-web-services-1.svg' },
         { name: 'DigitalOcean', logo: 'https://upload.wikimedia.org/wikipedia/commons/7/79/DigitalOcean_logo.png' },
         { name: 'Vercel', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Vercel_logo_2025.svg' },
-        { name: 'TikTok', logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/TikTok_logo.svg/1200px-TikTok_logo.svg.png' },
+        { name: 'TikTok', logo: '/partners/tiktok.svg' },
     ]
 
     return (
