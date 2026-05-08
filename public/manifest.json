@@ -1,0 +1,21 @@
+{
+    "name": "Nemark",
+    "short_name": "Nemark",
+    "description": "Giải pháp công nghệ & chuyển đổi số toàn diện",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0a0f1c",
+    "theme_color": "#3b82f6",
+    "icons": [
+        {
+            "src": "/logo.jpg",
+            "sizes": "192x192",
+            "type": "image/jpeg"
+        },
+        {
+            "src": "/logo.jpg",
+            "sizes": "512x512",
+            "type": "image/jpeg"
+        }
+    ]
+}

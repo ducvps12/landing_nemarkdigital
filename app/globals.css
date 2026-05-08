@@ -1,0 +1,91 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@import "aos/dist/aos.css";
+
+@theme {
+  /* Primary Colors */
+  --color-primary: #4988C4;
+  --color-primary-dark: #1C4D8D;
+  --color-primary-light: #BDE8F5;
+  --color-primary-darker: #0F2854;
+
+  /* Secondary Colors */
+  --color-secondary: #7C3AED;
+  --color-secondary-dark: #6D28D9;
+  --color-secondary-light: #8B5CF6;
+
+  /* Accent Colors */
+  --color-accent: #F59E0B;
+  --color-accent-dark: #D97706;
+  --color-accent-light: #FBBF24;
+
+  /* Text Colors */
+  --color-text-main: #1E293B;
+  --color-text-secondary: #475569;
+  --color-text-light: #64748B;
+  --color-text-muted: #94A3B8;
+}
+
+:root {}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #F8FAFC !important;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  min-height: 100vh;
+}
+
+/* Dark mode overrides - only background, NOT text color */
+html.dark body {
+  background: #0F172A !important;
+}
+
+/* Ensure all sections inherit or use correct bg */
+html:not(.dark) section {
+  background: transparent;
+}
+
+html.dark section {
+  background: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6b7280;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+}
+
+/* Firefox Scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #6b7280 transparent;
+}

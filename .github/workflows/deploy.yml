@@ -1,0 +1,73 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Sync files to server
+        uses: easingthemes/ssh-deploy@v5
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          REMOTE_HOST: ${{ secrets.SERVER_HOST }}
+          REMOTE_USER: ${{ secrets.SERVER_USER }}
+          REMOTE_PORT: ${{ secrets.SERVER_PORT }}
+          SOURCE: "./"
+          TARGET: "/www/wwwroot/landing_page/"
+          EXCLUDE: "node_modules/, .next/, .git/, .env, replace_domain.ps1"
+
+      - name: Install, Build & Restart
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          port: ${{ secrets.SERVER_PORT }}
+          command_timeout: 10m
+          script: |
+            export PATH="/www/server/nodejs/v24.11.1/bin:$PATH"
+            cd /www/wwwroot/landing_page
+
+            # Create .env from secrets
+            cat > .env << 'ENVEOF'
+            MYSQL_HOST=${{ secrets.MYSQL_HOST }}
+            MYSQL_USER=${{ secrets.MYSQL_USER }}
+            MYSQL_PASSWORD=${{ secrets.MYSQL_PASSWORD }}
+            MYSQL_DATABASE=${{ secrets.MYSQL_DATABASE }}
+            SESSION_SECRET=${{ secrets.SESSION_SECRET }}
+            SMTP_HOST=smtp.gmail.com
+            SMTP_PORT=587
+            SMTP_USER=${{ secrets.SMTP_USER }}
+            SMTP_PASS=${{ secrets.SMTP_PASS }}
+            APP_URL=https://nemarkdigital.com
+            ENVEOF
+
+            # Install dependencies (skip puppeteer chromium)
+            PUPPETEER_SKIP_DOWNLOAD=true npm install --production=false
+
+            # Build Next.js
+            npm run build
+
+            # Stop old process
+            pkill -f "next start" 2>/dev/null || true
+            sleep 2
+
+            # Start new process
+            PORT=4001 nohup npx next start -p 4001 > /www/wwwlogs/node_landing.log 2>&1 &
+            sleep 5
+
+            # Health check
+            HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" http://127.0.0.1:4001)
+            if [ "$HTTP_CODE" = "200" ] || [ "$HTTP_CODE" = "307" ]; then
+              echo "✅ Deploy successful! HTTP $HTTP_CODE"
+            else
+              echo "❌ Deploy failed. HTTP $HTTP_CODE"
+              tail -20 /www/wwwlogs/node_landing.log
+              exit 1
+            fi

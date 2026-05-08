@@ -1,0 +1,912 @@
+{
+    "header": {
+        "about": "About",
+        "services": "Services",
+        "solutions": "Startup Solutions",
+        "projects": "Projects",
+        "careers": "Careers",
+        "news": "News",
+        "contact": "Get a Quote",
+        "home": "Home",
+        "contactUs": "Contact Us",
+        "servicesMenu": {
+            "servicesTitle": "Services",
+            "webAppDesign": "Web App Design",
+            "websiteDesign": "Website Design",
+            "appDesign": "App Design",
+            "websiteSolutions": "Website & System Solutions",
+            "upgradeOptimize": "Website Upgrade & Optimization",
+            "maintenance": "Website Maintenance & Operation",
+            "speedSecurity": "Website Speed & Security",
+            "apiIntegration": "Payment, API & CRM Integration",
+            "seoMarketing": "SEO & Digital Marketing",
+            "seoOverall": "Comprehensive SEO",
+            "seoAudit": "SEO Audit & Consulting",
+            "infrastructure": "Digital Infrastructure & Accounts",
+            "domainHosting": "Domain & Hosting",
+            "businessEmail": "Business Email",
+            "vps": "VPS (Virtual Private Server)",
+            "proxy": "Proxy / IP Proxy",
+            "infraManagement": "Infrastructure Management & Operation",
+            "systemSecurity": "System Configuration & Security",
+            "aiTools": "AI Tools Upgrade",
+            "vpsSetup": "VPS Setup & Optimization"
+        },
+        "solutionsMenu": {
+            "sme": "Solutions for SMEs & Small Business",
+            "startup": "Solutions for Startups",
+            "onlineSales": "Online Sales Solutions",
+            "digitalConversion": "Digital Transformation Solutions",
+            "digitalBranding": "Digital Brand Building Solutions"
+        },
+        "mobileMenu": {
+            "services": "Services",
+            "solutions": "Solutions",
+            "blog": "NEMARK BLOG",
+            "newsLink": "News",
+            "careersLink": "Careers"
+        }
+    },
+    "banner": {
+        "slide": "Slide",
+        "ctaButton": "Free Consultation",
+        "slide1": {
+            "badge": "Nemark Digital Solutions",
+            "title": "Building Digital Solutions Elevating Your Brand",
+            "subtitle": "Expert team with 6+ years of experience, partnering with 16,000+ businesses on their comprehensive digital transformation journey."
+        },
+        "slide2": {
+            "badge": "Strategy & Innovation",
+            "title": "Breakthrough Thinking Battle-tested Solutions",
+            "subtitle": "Website Design, App Development, SEO & Digital Marketing — every solution personalized to your unique business needs."
+        },
+        "slide3": {
+            "badge": "Growth Partner",
+            "title": "Long-term Partnership Sustainable Growth",
+            "subtitle": "Powerful VPS/Proxy infrastructure, 24/7 technical support, secure protection — peace of mind for every business."
+        }
+    },
+    "intro1": {
+        "stats": {
+            "customers": "Clients",
+            "deployed": "Websites / Apps Deployed",
+            "experience": "Years of Experience",
+            "vps": "VPS / Proxy",
+            "systems": "Systems",
+            "satisfaction": "Satisfaction"
+        },
+        "text1": "<strong>Nemark</strong> understands that behind every brand lies an aspiration to grow. As your <strong>strategic partner</strong>, we deliver a comprehensive <strong>ecosystem of solutions</strong> to redraw your growth map in the digital landscape — where every business opportunity is captured and fully realized.",
+        "text2": "<strong>Nemark</strong> is proud to be the trusted partner of over 16,000+ clients throughout a 6-year journey of positioning and elevating brands. With the capability of deploying 860+ Websites/Apps and 500+ stable server systems, <strong>Nemark</strong> brings peace of mind to businesses — a commitment affirmed by the trust and satisfaction of 98% of our partners."
+    },
+    "intro2": {
+        "row1": {
+            "card1": {
+                "title": "Why Partners Trust Nemark",
+                "description": "Nemark provides a solid foundation through deeply personalized Technology & Marketing solutions."
+            },
+            "card2": {
+                "title": "Young Team & Breakthrough Thinking",
+                "description": "Abundant energy, always updated with the latest technology to deliver creative solutions."
+            },
+            "card3": {
+                "title": "Continuous Improvement",
+                "description": "Using satisfaction as the benchmark, constantly refining services beyond expectations."
+            }
+        },
+        "row2": {
+            "card1": {
+                "title": "High Expertise",
+                "description": "Engineering team with 5+ years of experience, updated with AI, Big Data, Cloud."
+            },
+            "card2": {
+                "title": "24/7 Technical Support",
+                "description": "Incident response within 15 minutes, stable system operation."
+            },
+            "card3": {
+                "title": "Secure & Safe",
+                "description": "Advanced information security, robust and reliable data protection."
+            },
+            "card4": {
+                "title": "Flexible & Personalized",
+                "description": "Flexible design, compatible with each client's specific business needs."
+            }
+        }
+    },
+    "solutions": {
+        "subtitle": "Solutions",
+        "title": "Our Solutions",
+        "description": "A comprehensive technology ecosystem helping businesses achieve sustainable growth",
+        "learnMore": "Learn More",
+        "items": {
+            "webDev": {
+                "title": "Web Development",
+                "description": "Build performance-optimized websites, easily scalable to business needs."
+            },
+            "appDesign": {
+                "title": "App Design",
+                "description": "Develop modern mobile applications, optimized UX across all devices."
+            },
+            "uxui": {
+                "title": "UX/UI Design",
+                "description": "Optimize interface experience, increase engagement and conversions."
+            },
+            "chatbot": {
+                "title": "AI Chatbot 24/7",
+                "description": "Automated customer care continuously, without interruption."
+            },
+            "security": {
+                "title": "System Security",
+                "description": "Enhance speed, security and stability for your systems."
+            },
+            "operation": {
+                "title": "Website Operations",
+                "description": "Monitor, update and handle issues, ensuring continuous operation."
+            }
+        }
+    },
+    "feedback": {
+        "badge": "What clients say",
+        "title": "Partner Feedback",
+        "description": "Over <span>16,000+</span> clients have trusted and been satisfied with our services",
+        "testimonials": {
+            "t1": {
+                "name": "Nguyen Van An",
+                "position": "CEO",
+                "company": "Tech Startup ABC",
+                "content": "Nemark helped us build a complete internal management system. The team is professional, dedicated, and always ready to support 24/7. The project was delivered on time with quality beyond expectations."
+            },
+            "t2": {
+                "name": "Tran Thi Binh",
+                "position": "Marketing Director",
+                "company": "Fashion Brand XYZ",
+                "content": "The e-commerce website designed by Nemark helped our revenue increase by 300% in 6 months. Beautiful interface, fast speed, and excellent SEO optimization. Especially impressed with the after-sales service."
+            },
+            "t3": {
+                "name": "Le Hoang Nam",
+                "position": "Founder",
+                "company": "EdTech Solutions",
+                "content": "We have worked with many partners but Nemark understands startup needs the best. They don't just code but also provide close product strategy consulting. Highly recommended!"
+            },
+            "t4": {
+                "name": "Pham Minh Quan",
+                "position": "IT Manager",
+                "company": "Manufacturing Corp",
+                "content": "The ERP system deployed by Nemark has completely digitized our production process. Reduced order processing time by 60% and increased management efficiency. A very worthwhile investment!"
+            }
+        }
+    },
+    "projectSection": {
+        "title": "1000+ Outstanding Projects from",
+        "titleHighlight": "Nemark",
+        "description": "Below are comprehensive website design projects from small to large scale, helping clients find solutions to elevate their brand and reach potential customers in the online market",
+        "categories": {
+            "all": "All",
+            "selling": "E-commerce",
+            "interior": "Interior",
+            "service": "Service",
+            "realEstate": "Real Estate",
+            "intro": "Corporate",
+            "education": "Education"
+        },
+        "projects": {
+            "p1": "PREMIUM COSMETICS WEBSITE",
+            "p2": "JEWELRY WEBSITE",
+            "p3": "SPORTS BALL SALES WEBSITE",
+            "p4": "COFFEE MACHINE SALES WEBSITE",
+            "p5": "SMART DOOR LOCK WEBSITE",
+            "p6": "WOMEN'S FASHION WEBSITE",
+            "p7": "SIM CARD RENTAL & SALES WEBSITE",
+            "p8": "ELEVATOR EQUIPMENT WEBSITE",
+            "p9": "TARO COURSE WEBSITE"
+        }
+    },
+    "cta": {
+        "title": "Let Nemark Be Your Partner",
+        "subtitle": "Contact us now for free consultation and detailed pricing",
+        "nameLabel": "Full Name",
+        "namePlaceholder": "Enter your full name",
+        "emailLabel": "Email",
+        "phoneLabel": "Phone Number",
+        "serviceLabel": "Service of Interest",
+        "servicePlaceholder": "Select a service",
+        "messageLabel": "Detailed Description",
+        "messagePlaceholder": "Describe your requirements in detail...",
+        "submitting": "Sending...",
+        "submitButton": "Submit Consultation Request",
+        "successMessage": "Request submitted successfully! We will contact you as soon as possible.",
+        "errorMessage": "An error occurred. Please try again later.",
+        "responseNote": "We will respond within <strong>15 minutes</strong>",
+        "bottomText": "NEMARK – Building Comprehensive Website Solutions & Sustainable Growth",
+        "services": {
+            "s1": "Website Design",
+            "s2": "App Design",
+            "s3": "SEO & Marketing",
+            "s4": "Startup Solutions",
+            "s5": "Infrastructure & Digital Accounts",
+            "s6": "Maintenance & Upgrades",
+            "s7": "Other"
+        }
+    },
+    "services": {
+        "subtitle": "Areas of Expertise",
+        "title": "Our Services",
+        "description": "Providing a comprehensive technology ecosystem to help businesses achieve breakthrough revenue growth.",
+        "detail": "DETAILS",
+        "items": {
+            "websiteDesign": {
+                "title": "Website Design",
+                "features": [
+                    "Standard UI/UX Interface",
+                    "SEO & Speed Optimization",
+                    "Multi-device Compatible",
+                    "High Security, Easy Management",
+                    "Free Hosting & Domain"
+                ]
+            },
+            "websiteSolutions": {
+                "title": "Website & System Solutions",
+                "features": [
+                    "Recover Hacked/Malware Websites",
+                    "Fix Payment & Logistics Errors",
+                    "Safe Hosting & Data Migration",
+                    "Fix Display & API Errors",
+                    "SSL Setup & Plugin Fix"
+                ]
+            },
+            "infrastructure": {
+                "title": "Digital Infrastructure",
+                "features": [
+                    "Domain & Hosting Provider",
+                    "Reliable Business Email",
+                    "High-speed VPS & Proxy",
+                    "Security & Data Backup",
+                    "24/7 Technical Support"
+                ]
+            },
+            "maintenance": {
+                "title": "Web Maintenance & Care",
+                "features": [
+                    "Regular Check & Fix",
+                    "Automatic Data Backup",
+                    "Security Vulnerability Patching",
+                    "Database & Speed Optimization",
+                    "Minor Content Updates Support"
+                ]
+            },
+            "appDesign": {
+                "title": "App Design",
+                "features": [
+                    "Digitize Business Processes",
+                    "CRM, HRM, POS Integration",
+                    "Realtime Management & Reports",
+                    "Internal Data Security",
+                    "Custom App Development"
+                ]
+            },
+            "seoMarketing": {
+                "title": "SEO & Digital Marketing",
+                "features": [
+                    "Sustainable Comprehensive SEO",
+                    "Website Audit & Standardization",
+                    "Organic Traffic Growth",
+                    "Conversion Rate Optimization",
+                    "Brand Coverage Expansion"
+                ]
+            },
+            "crm": {
+                "title": "Management Software (CRM/HRM)",
+                "features": [
+                    "Customer & Sales Management",
+                    "Automated Attendance & Payroll",
+                    "Inventory & Order Control",
+                    "Detailed Realtime Reports",
+                    "Multi-level Security Access"
+                ]
+            },
+            "customApp": {
+                "title": "Custom App Development",
+                "features": [
+                    "Business Process Analysis",
+                    "Specialized Dashboard Design",
+                    "Complex Data Flow Processing",
+                    "Third-party API Integration",
+                    "Original Source Code Delivery"
+                ]
+            }
+        }
+    },
+    "projects": {
+        "subtitle": "PROJECTS",
+        "title": "Featured Projects",
+        "viewAll": "View All Projects",
+        "categories": {
+            "selling": "E-commerce",
+            "intro": "Corporate",
+            "interior": "Interior",
+            "service": "Service"
+        }
+    },
+    "footer": {
+        "companyName": "NEMARK MEDIA & TECHNOLOGY JOINT STOCK COMPANY",
+        "taxId": "Tax ID: 0111278699",
+        "addressFull": "Address: No. 19, Road 452, Linh Son Village, Ha Bang Commune, Hanoi, Vietnam",
+        "phone": "0914659183",
+        "email": "support@nemarkdigital.com",
+        "services": "Services",
+        "infoTitle": "INFORMATION",
+        "info": {
+            "about": "About Nemark",
+            "experts": "Expert Team",
+            "partners": "Partners & Clients",
+            "careers": "Careers",
+            "cooperation": "Cooperation"
+        },
+        "supportTitle": "SUPPORT",
+        "support": {
+            "privacy": "Privacy Policy",
+            "payment": "Payment & Refund Policy",
+            "warranty": "Warranty & Maintenance Policy",
+            "delivery": "Product Delivery Process",
+            "complaints": "Complaint & Incident Handling",
+            "invoice": "VAT Invoice Guide",
+            "feedback": "Service Quality Feedback"
+        },
+        "serviceLinks": {
+            "websiteDesign": "Website Design",
+            "appDesign": "App Design",
+            "upgradeOptimize": "Website Upgrade & Optimization",
+            "maintenance": "Website Maintenance & Operation",
+            "speedSecurity": "Website Speed & Security",
+            "apiIntegration": "Payment, API & CRM Integration",
+            "seo": "Comprehensive SEO",
+            "domainHosting": "Domain & Hosting",
+            "businessEmail": "Business Email",
+            "vps": "VPS (Virtual Private Server)",
+            "proxy": "Proxy / IP Proxy"
+        },
+        "connectTitle": "Connect With Us",
+        "officeAddress": "Office Address",
+        "copyright": "© 2026 Nemark Network. All rights reserved.",
+        "consultNow": "Get a Quote"
+    },
+    "mauWebsite": {
+        "heroTitle": "Website Template",
+        "heroTitleHighlight": "Collection",
+        "heroDescription": "Explore 100+ beautiful, modern and professional website templates. All optimized for SEO and responsive across all devices.",
+        "updating": "Continuously updated",
+        "rating": "Rated 4.8/5",
+        "searchPlaceholder": "Search website templates...",
+        "templates": "templates",
+        "noResults": "No results found",
+        "noResultsDesc": "Try searching with different keywords or select another category",
+        "contactPrice": "Contact Us",
+        "categories": {
+            "all": "All",
+            "fashion": "Fashion",
+            "selling": "E-commerce",
+            "cosmetics": "Cosmetics",
+            "interior": "Interior",
+            "service": "Service",
+            "realEstate": "Real Estate",
+            "education": "Education"
+        },
+        "websiteTitles": {
+            "w1": "Premium Cosmetics Website",
+            "w2": "Premium Jewelry Website",
+            "w3": "Sports Ball Sales Website",
+            "w4": "Smart Door Lock Website",
+            "w5": "Coffee Machine Website",
+            "w6": "Women's Fashion Website"
+        }
+    },
+    "common": {
+        "learnMore": "Learn More",
+        "contactUs": "Contact Us",
+        "getStarted": "Get Started",
+        "viewMore": "View More",
+        "close": "Close",
+        "send": "Send",
+        "language": "Language"
+    },
+    "contactModal": {
+        "title": "Contact Us",
+        "subtitle": "We will respond within 15 minutes",
+        "nameLabel": "Full Name",
+        "namePlaceholder": "Enter your full name",
+        "emailLabel": "Email",
+        "phoneLabel": "Phone Number",
+        "serviceLabel": "Service of Interest",
+        "servicePlaceholder": "Select a service",
+        "messageLabel": "Detailed Description",
+        "messagePlaceholder": "Describe your requirements in detail...",
+        "submitting": "Sending...",
+        "submitButton": "Submit Request",
+        "close": "Close",
+        "successMessage": "Request submitted successfully! We will contact you as soon as possible.",
+        "errorMessage": "An error occurred. Please try again later.",
+        "services": {
+            "s1": "Website Design",
+            "s2": "App Design",
+            "s3": "SEO & Marketing",
+            "s4": "Startup Solutions",
+            "s5": "Infrastructure & Digital Accounts",
+            "s6": "Maintenance & Upgrades",
+            "s7": "Other"
+        }
+    },
+    "aiToolsPage": {
+        "hero": {
+            "badge": "AI Tools & Premium Subscriptions",
+            "title1": "Upgrade ",
+            "titleHighlight": "AI Tools",
+            "title2": "Unlock the Power of AI",
+            "subtitle": "Consulting & support for upgrading ChatGPT Plus, Gemini Ultra, CapCut Pro — easy international payment, fast activation, dedicated 24/7 support.",
+            "viewPricing": "View Pricing",
+            "consultNow": "Get Consultation",
+            "usersCount": "customers served",
+            "chatgpt": "ChatGPT Plus",
+            "chatgptDesc": "GPT-5.4, DALL·E 4, Advanced Analytics",
+            "gemini": "Gemini Ultra",
+            "geminiDesc": "Most powerful Google AI, Gemini 3.1 Pro, 2M tokens",
+            "capcut": "CapCut Pro",
+            "capcutDesc": "Unlimited video editing",
+            "more": "And more",
+            "moreDesc": "Cursor, Midjourney, Claude Pro..."
+        },
+        "benefits": {
+            "sectionLabel": "Benefits",
+            "title": "Why choose Nemark's AI Tools service?",
+            "subtitle": "Comprehensive AI Tools upgrade solution, saving time and costs for businesses",
+            "b1Title": "Easy International Payment",
+            "b1Desc": "No international Visa/Mastercard needed. Nemark handles payment, convenient domestic bank transfer.",
+            "b2Title": "Fast Activation",
+            "b2Desc": "Account activated within 15 minutes after payment. Ready to use immediately.",
+            "b3Title": "100% Genuine Accounts",
+            "b3Desc": "All subscriptions purchased directly from official providers, guaranteed safe.",
+            "b4Title": "24/7 Technical Support",
+            "b4Desc": "Support team on standby, quickly resolving any account-related issues.",
+            "b5Title": "Detailed User Guides",
+            "b5Desc": "Providing documentation & video tutorials to maximize premium features.",
+            "b6Title": "Auto-renewal & Discounts",
+            "b6Desc": "Periodic renewal support, special pricing for loyal customers & long-term plans."
+        },
+        "pricing": {
+            "sectionLabel": "Pricing",
+            "title": "Choose the Right AI Tool Plan",
+            "subtitle": "Service fee includes: consultation, official subscription purchase, activation & technical support",
+            "popular": "POPULAR",
+            "contactPrice": "Contact Us",
+            "cta": "Consult & Order",
+            "chatgptName": "ChatGPT Plus",
+            "chatgptTag": "OpenAI",
+            "chatgptDesc": "Access GPT-5.4, DALL·E 4, Sora video and all premium features.",
+            "chatgptF1": "Unlimited GPT-5.4 & GPT-5.4 mini",
+            "chatgptF2": "DALL·E 4 high-quality AI image generation",
+            "chatgptF3": "Advanced Data Analysis & Code Interpreter",
+            "chatgptF4": "Custom GPTs & GPT Store",
+            "chatgptF5": "Sora video generation & Web browsing",
+            "chatgptF6": "API key support (optional)",
+            "geminiName": "Gemini Ultra",
+            "geminiTag": "Google AI",
+            "geminiDesc": "Most powerful Google AI with Gemini 3.1 Pro, 2M token context, integrated with entire Google ecosystem.",
+            "geminiF1": "Latest Gemini 3.1 Pro model (03/2026)",
+            "geminiF2": "2 million token context window",
+            "geminiF3": "Google Workspace & Docs integration",
+            "geminiF4": "Notebook LM Plus & Gems AI",
+            "geminiF5": "AI Studio & Vertex AI access",
+            "geminiF6": "30TB Google One storage",
+            "capcutName": "CapCut Pro",
+            "capcutTag": "ByteDance",
+            "capcutDesc": "Professional video editing, unlimited premium templates & effects library.",
+            "capcutF1": "4K video export without watermark",
+            "capcutF2": "500,000+ premium templates",
+            "capcutF3": "AI Background Remover",
+            "capcutF4": "100GB cloud storage",
+            "capcutF5": "Unlimited licensed music",
+            "capcutF6": "Multilingual AI Text-to-Speech",
+            "extraNote": "Nemark also supports:",
+            "extraTools": "Cursor Pro, Claude Pro, Midjourney, Notion AI, Canva Pro",
+            "extraCta": "Contact for more →"
+        },
+        "process": {
+            "sectionLabel": "Process",
+            "title": "4 Simple Steps to Get Started",
+            "subtitle": "Quick process, from consultation to activation in just 15 minutes",
+            "s1Title": "Contact & Consult",
+            "s1Desc": "Submit your request via form, Zalo or hotline. Nemark recommends the best plan for your needs.",
+            "s2Title": "Choose Plan & Pay",
+            "s2Desc": "Select the AI tool to upgrade. Pay via bank transfer, Momo, ZaloPay or cash.",
+            "s3Title": "Account Activation",
+            "s3Desc": "Nemark purchases the official subscription and activates your account within 15 minutes.",
+            "s4Title": "Guide & Support",
+            "s4Desc": "Receive detailed user documentation. Support team assists throughout your subscription period."
+        }
+    },
+    "vpsSetupPage": {
+        "hero": {
+            "badge": "Uptime 99.99%",
+            "title1": "Setup & Optimize ",
+            "titleHighlight": "VPS",
+            "title2": "Professionally",
+            "subtitle": "Comprehensive VPS installation, performance optimization & security service. Including Game Server Hosting for Minecraft, Rust, ARK and more.",
+            "viewPricing": "View Pricing",
+            "consultNow": "Get Consultation"
+        },
+        "benefits": {
+            "sectionLabel": "Services",
+            "title": "Comprehensive VPS Setup & Optimization",
+            "subtitle": "From basic installation to advanced performance optimization, Nemark handles it all",
+            "b1Title": "3x Speed Optimization",
+            "b1Desc": "Fine-tune NGINX, MySQL, PHP, cache system to make your website/app run 3x faster than default configuration.",
+            "b2Title": "Advanced Security",
+            "b2Desc": "Configure Firewall, Fail2Ban, SSL/TLS, WAF. Block DDoS, brute force & common attacks.",
+            "b3Title": "Game Server Hosting",
+            "b3Desc": "Legal game server setup: Minecraft, Rust, ARK, CS2, Valheim. JVM optimization, anti-lag, plugin management.",
+            "b4Title": "Auto Backup",
+            "b4Desc": "Daily, weekly, monthly backup system. Multi-location storage ensuring absolute data safety.",
+            "b5Title": "24/7 Monitoring",
+            "b5Desc": "Real-time CPU, RAM, Disk, Network monitoring. Instant alerts via Telegram/Email when anomalies detected.",
+            "b6Title": "Expert Configuration Consulting",
+            "b6Desc": "Engineering team with 5+ years experience consulting on the best VPS configuration for your needs and budget."
+        },
+        "pricing": {
+            "sectionLabel": "Pricing",
+            "title": "VPS Setup & Optimization Plans",
+            "subtitle": "One-time setup fee, including complete installation, optimization and technical support",
+            "popular": "POPULAR",
+            "contactPrice": "Contact Us",
+            "cta": "Consult & Order",
+            "basicName": "Basic",
+            "basicTag": "Basic Setup",
+            "basicDesc": "VPS installation & optimization for basic website/app, suitable for small businesses.",
+            "basicF1": "LEMP/LAMP Stack installation",
+            "basicF2": "Free SSL configuration",
+            "basicF3": "Basic PHP & MySQL optimization",
+            "basicF4": "Firewall setup (UFW)",
+            "basicF5": "Basic admin guide",
+            "basicF6": "7-day post-setup support",
+            "proName": "Pro",
+            "proTag": "Advanced Setup",
+            "proDesc": "High performance + advanced security + monitoring, suitable for medium businesses.",
+            "proF1": "All Basic features",
+            "proF2": "NGINX FastCGI Cache optimization",
+            "proF3": "Redis/Memcached configuration",
+            "proF4": "Security: Fail2Ban + WAF + ModSecurity",
+            "proF5": "Grafana/Prometheus monitoring setup",
+            "proF6": "Daily automatic backup",
+            "proF7": "Telegram/Email alerts",
+            "proF8": "30-day technical support",
+            "gameName": "Game Server",
+            "gameTag": "Gaming hosting",
+            "gameDesc": "Legal game server setup on VPS: Minecraft, Rust, ARK, CS2, Valheim...",
+            "gameF1": "Custom game server installation",
+            "gameF2": "JVM flags & network optimization",
+            "gameF3": "Anti-lag & TPS optimization",
+            "gameF4": "Plugin management (BungeeCord, Velocity)",
+            "gameF5": "DDoS Protection setup",
+            "gameF6": "Auto-restart & crash recovery",
+            "gameF7": "Automatic world data backup",
+            "gameF8": "30-day technical support",
+            "gameNoteTitle": "Legal Game Servers",
+            "gameNoteDesc": "Nemark only supports setup for games that officially allow hosting: Minecraft (Java & Bedrock), Rust, ARK: Survival Evolved, Counter-Strike 2, Valheim, Terraria, 7 Days to Die, Project Zomboid and more. Contact us for game recommendation."
+        },
+        "process": {
+            "sectionLabel": "Process",
+            "title": "Professional Deployment Process",
+            "subtitle": "From assessment to handover, everything is done systematically and transparently",
+            "s1Title": "Needs Assessment",
+            "s1Desc": "Understand VPS usage purpose, expected traffic, tech stack to recommend optimal configuration.",
+            "s2Title": "Configuration Consulting",
+            "s2Desc": "Recommend VPS provider, hardware configuration, OS and software suitable for your budget.",
+            "s3Title": "Setup & Optimize",
+            "s3Desc": "Install complete stack, optimize performance, configure security, set up monitoring and automatic backup.",
+            "s4Title": "Handover & Support",
+            "s4Desc": "Deliver detailed documentation, admin guides. Continuous technical support for the committed period."
+        }
+    },
+    "domainHostingPage": {
+        "hero": {
+            "badge": "Nemark provides comprehensive solutions",
+            "title": "HOSTING AND DOMAIN SERVICES",
+            "subtitle": "TRUSTED HIGH QUALITY",
+            "description": "Nemark provides optimized Domain & Hosting solutions at competitive prices, committed to powerful performance and extreme flexibility. We deliver Hosting services with unlimited bandwidth, keeping your website running smoothly.",
+            "buyNow": "BUY NOW",
+            "consult": "Contact for consultation"
+        },
+        "hosting": {
+            "title": "HOSTING",
+            "storageLabel": "Storage:",
+            "cpuLabel": "CPU / RAM:",
+            "domainLabel": "Domain / MySQL:",
+            "cta": "Register Now",
+            "perMonth": "Month",
+            "plans": {
+                "p1": "Student Plan",
+                "p2": "Personal Plan",
+                "p3": "Personal+ Plan",
+                "p4": "Business Plan",
+                "p5": "E-commerce Plan",
+                "p6": "Professional Plan"
+            }
+        },
+        "domain": {
+            "title": "DOMAIN",
+            "thName": "Domain",
+            "thPrice": "Registration Fee",
+            "thNote": "Note",
+            "vnSeeDetails": "See detailed pricing below",
+            "vnMultiType": "Multiple types",
+            "comMostPopular": "Most popular",
+            "netNetwork": "Network",
+            "priceNote": "* Prices do not include VAT. See detailed pricing below."
+        },
+        "vnDomain": {
+            "title": "Vietnam Domain Pricing",
+            "thCategory": "VN Domain",
+            "thTld": "TLDs",
+            "thRegistration": "Registration Fee",
+            "thRenewal": "Renewal Fee",
+            "thTransfer": "Transfer Fee",
+            "categoryLabel": "VN Domain",
+            "note": "* Prices include VAT. Contact us for the most suitable domain consultation."
+        },
+        "intlDomain": {
+            "title": "International Domain Pricing",
+            "thCategory": "International Domain",
+            "thTld": "TLDs",
+            "thRegistration": "Registration Fee",
+            "thRenewal": "Renewal Fee",
+            "thTransfer": "Transfer Fee",
+            "categoryLabel": "International Domain",
+            "importantNote": "Important note:",
+            "importantText": "Not every cheap domain service is reliable and provides a good experience. At Nemark, we are committed to providing quality domains, fast registration and cost savings. If you are looking for a trusted domain for your personal or business website, call our hotline",
+            "importantCta": "for detailed consultation today!",
+            "note": "* Prices include VAT. Contact us for the most suitable domain consultation."
+        },
+        "process": {
+            "title": "PROCESS",
+            "stepLabel": "Step",
+            "s1Title": "Survey & Analysis",
+            "s1Desc": "Survey & Business analysis",
+            "s2Title": "Design Guidelines",
+            "s2Desc": "Design documentation guidelines",
+            "s3Title": "Development & API",
+            "s3Desc": "Development & API Integration",
+            "s4Title": "Testing",
+            "s4Desc": "Internal simulation testing",
+            "s5Title": "Deployment",
+            "s5Desc": "Production deployment",
+            "s6Title": "Handover",
+            "s6Desc": "Document handover & Training"
+        }
+    },
+    "careersPage": {
+        "hero": {
+            "title": "Build the Digital Future with Nemark",
+            "subtitle": "Join our team of top technology experts. Where you can showcase your talent, develop skills and create products with real value.",
+            "viewPositions": "View Open Positions",
+            "companyCulture": "Company Culture"
+        },
+        "benefits": {
+            "sectionLabel": "Why choose Nemark?",
+            "title": "Benefits & Work Environment",
+            "subtitle": "We believe happy employees create great products",
+            "b1Title": "Competitive Salary",
+            "b1Desc": "Competitive salary, performance and project-based bonuses",
+            "b2Title": "Full Insurance",
+            "b2Desc": "Full social & health insurance + Premium healthcare",
+            "b3Title": "Flexible Working",
+            "b3Desc": "Hybrid working, flexible time, work-life balance",
+            "b4Title": "Training & Development",
+            "b4Desc": "Training budget, professional courses, seminars",
+            "b5Title": "Team Activities",
+            "b5Desc": "Team building, travel, birthdays, monthly events",
+            "b6Title": "Growth Opportunities",
+            "b6Desc": "Clear career path, bi-annual performance reviews"
+        },
+        "positions": {
+            "sectionLabel": "Career Opportunities",
+            "title": "Open Positions",
+            "subtitle": "Discover positions that match your skills and passion",
+            "requirementsLabel": "Requirements",
+            "benefitsLabel": "Benefits",
+            "salaryLabel": "Salary",
+            "perMonth": "VND/month",
+            "applyNow": "Apply Now",
+            "job1": {
+                "title": "Sales Representative",
+                "department": "Sales",
+                "location": "Hanoi",
+                "type": "Full-time",
+                "salary": "8-15M + Commission",
+                "description": "Looking for dynamic sales staff who proactively seek clients, consult on website design, app, and technology solutions for businesses. Unlimited income based on performance.",
+                "req1": "No experience required, B2B sales experience preferred",
+                "req2": "Good communication and persuasion skills",
+                "req3": "Proactive, able to work under KPI pressure",
+                "req4": "Proficient in social media (Facebook, Zalo, LinkedIn)",
+                "req5": "Must have personal laptop/phone for work",
+                "ben1": "Base salary + attractive commission (5-15% contract value)",
+                "ben2": "Unlimited income, top sales receive hot bonuses",
+                "ben3": "Free product and sales skills training",
+                "ben4": "Flexible work, remote options available",
+                "ben5": "Fast-track to sales team lead position"
+            },
+            "job2": {
+                "title": "Java Game Developer (NRO / Mobile Game)",
+                "department": "Game Development",
+                "location": "Remote",
+                "type": "Full-time / Part-time",
+                "salary": "10-25M",
+                "description": "Hiring Java developers with experience in mobile game development (NRO-style), 2D server-client games. Join us in building, operating and developing features for game projects.",
+                "req1": "Proficient in Java SE/Java Core, Object-Oriented Programming",
+                "req2": "Experience or understanding of NRO game structure, 2D mobile games",
+                "req3": "Knowledge of Socket, multi-threading, character data handling",
+                "req4": "Experience with MySQL or database management systems",
+                "req5": "Preferred: Previous mod/dev experience with private servers",
+                "ben1": "100% remote work, flexible hours",
+                "ben2": "Bonuses based on completed products and features",
+                "ben3": "Access to real game source code and systems",
+                "ben4": "Comfortable work environment, minimal bureaucracy",
+                "ben5": "Opportunity to develop long-term game projects"
+            },
+            "job3": {
+                "title": "Fresher / IT Intern",
+                "department": "Training & Development",
+                "location": "Hanoi / Remote",
+                "type": "Full-time / Internship",
+                "salary": "3-8M",
+                "description": "Welcoming IT students and fresh graduates who want to learn practically. You'll receive direct training, participate in real projects and develop skills rapidly. Nemark seeks hardworking, eager learners — no need to be skilled already.",
+                "req1": "Final-year students or fresh graduates in IT, CS or related fields",
+                "req2": "Basic knowledge of HTML, CSS, JavaScript or Java, PHP (depending on position)",
+                "req3": "Eager to learn, hardworking, willing to work intensively",
+                "req4": "Must have personal computer for work",
+                "req5": "Preferred: Personal projects or freelance experience",
+                "ben1": "1-on-1 mentoring, hands-on training with real projects",
+                "ben2": "Internship allowance + bonuses for good performance",
+                "ben3": "Opportunity to become full-time employee after 2-3 months",
+                "ben4": "Flexible working, suitable for students",
+                "ben5": "Build real work experience for your CV"
+            }
+        }
+    },
+    "aboutPage": {
+        "hero": {
+            "badge": "About Us",
+            "title": "ABOUT",
+            "titleHighlight": "NEMARK",
+            "subtitle": "A young, dedicated, and creative development team — building modern digital solutions for Vietnamese businesses."
+        },
+        "introduction": {
+            "title1": "A young and ambitious development team",
+            "title2": "building modern web solutions",
+            "p1": "Founded in <strong>November 2025</strong>, <strong>NEMARK Dev</strong> is a young and ambitious development team, bringing together talented engineers passionate about building reliable, scalable, user-centric web products.",
+            "p2": "Though newly established, every team member contributes <strong>solid technical skills</strong> and a strong spirit of dedication to deliver quality products. We prioritize Clean Architecture, refined UI animations, and performance optimization in every project.",
+            "p3": "Animations and interactions are carefully designed to <strong>guide users</strong>, reduce friction, and enhance the user experience — rather than causing distraction. <strong>NEMARK Dev</strong> is committed to turning ideas into clean, scalable, high-performance digital products."
+        },
+        "vision": {
+            "title": "Vision",
+            "tagline": "Pioneering user-centric digital solutions",
+            "p1": "Driven by a <strong>passion for technology and innovation</strong>, NEMARK aims to become a pioneering young team in digital solutions, building <strong>reliable, scalable</strong>, user-centric web products.",
+            "p2": "We continuously innovate, create, and build practical solutions with <strong>clean architecture and high performance</strong>, helping <strong>Vietnamese businesses</strong> confidently grow sustainably in the digital era."
+        },
+        "mission": {
+            "title": "Mission",
+            "tagline": "Transforming ideas into excellent digital products",
+            "content": "NEMARK's mission is to break down all technology barriers to unlock the power of the Vietnamese business community. We are committed to bringing specialized technology solutions to millions of customers at optimal costs, building SEO-optimized sustainable website platforms — \"digital ambassadors\" operating 24/7. <strong>NEMARK</strong> accompanies businesses in solving all technical challenges, helping <strong>businesses</strong> focus entirely on core growth goals."
+        },
+        "leadership": {
+            "title": "Leadership Team",
+            "subtitle": "The talented captains steering the NEMARK ship to the open seas.",
+            "ceoQuote": "\"Leadership is not a title, it is action and example.\"",
+            "connect": "Connect"
+        },
+        "culture": {
+            "badge": "Corporate Culture",
+            "title": "Collective Strength - Building Success",
+            "subtitle": "At NEMARK, every individual is an important piece that creates the overall picture of collective success.",
+            "joinTeam": "Join Our Team",
+            "learnMore": "Learn More"
+        },
+        "testimonials": {
+            "sectionLabel": "Hear From",
+            "title1": "WHAT CLIENTS SAY",
+            "title2": "ABOUT NEMARK",
+            "subtitle": "The Nemark team works professionally, dedicatedly, and delivers technology solutions beyond expectations. We are proud to accompany the success of our partners.",
+            "trustedPartner": "Trusted Partners",
+            "partnerCount": "Over 200+ businesses have successfully digitally transformed with NEMARK.",
+            "t1Name": "Mr. Lam Vinh Thuy",
+            "t1Role": "CEO AuraVibe Medical Center",
+            "t1Industry": "Beauty & Clinic",
+            "t1Quote": "\"Excellent service, enthusiastic support team. Nemark helped us build a professional customer management system, comprehensively enhancing the service experience at AuraVibe.\"",
+            "t2Name": "Ms. Mai Phuong Thao",
+            "t2Role": "Founder - GreenPioneer Solutions",
+            "t2Industry": "Small Business & Startup",
+            "t2Quote": "\"Your agile workflow truly suits our startup's development speed. The final product was delivered on time with very high code quality.\"",
+            "t3Name": "Mr. Tran Hoang Nam",
+            "t3Role": "E-commerce Manager - UrbanDeli",
+            "t3Industry": "F&B / Retail",
+            "t3Quote": "\"The multi-channel ordering system deployed by Nemark runs smoothly and handles peak hours well. Our online revenue has grown 30% after 3 months.\"",
+            "t4Name": "Ms. Le Khanh An",
+            "t4Role": "Brand Manager - VelvetNode Fashion",
+            "t4Industry": "Fashion & Lifestyle",
+            "t4Quote": "\"The new website interface perfectly captures the brand spirit: refined and luxurious. We've received many compliments from VIP customers about the shopping experience.\""
+        },
+        "news": {
+            "sectionLabel": "NEWS",
+            "readMore": "Read more",
+            "viewMore": "VIEW MORE",
+            "loading": "Loading news..."
+        }
+    },
+    "projectsPage": {
+        "hero": {
+            "title": "Featured Projects",
+            "subtitle": "Discover successful projects that Nemark has delivered for our partners and clients"
+        },
+        "breadcrumb": { "home": "Home", "projects": "Projects" },
+        "stats": {
+            "s1Value": "200+", "s1Label": "Projects Completed",
+            "s2Value": "150+", "s2Label": "Satisfied Clients",
+            "s3Value": "98%", "s3Label": "Success Rate",
+            "s4Value": "5+", "s4Label": "Years Experience"
+        },
+        "filter": { "all": "All" },
+        "labels": { "client": "Client:", "technologies": "Technologies:", "results": "Results:" },
+        "p1": {
+            "title": "FashionHub E-commerce Website",
+            "client": "FashionHub Vietnam",
+            "description": "Designed and developed a comprehensive e-commerce platform with over 10,000 fashion products.",
+            "r1": "250% increase in online sales", "r2": "5,000+ orders/month processed", "r3": "Page load time < 2s"
+        },
+        "p2": {
+            "title": "MediCare Hospital Management System",
+            "client": "MediCare General Hospital",
+            "description": "Developed a patient management, appointment scheduling and electronic medical records system.",
+            "r1": "Managing 50,000+ patients", "r2": "40% reduction in record processing time", "r3": "E-health insurance integration"
+        },
+        "p3": {
+            "title": "FastFood Delivery App",
+            "client": "FastFood Delivery",
+            "description": "Mobile food ordering application with real-time delivery tracking.",
+            "r1": "100,000+ downloads", "r2": "20,000+ orders/month", "r3": "4.8/5 rating on App Store"
+        },
+        "p4": {
+            "title": "EduTech Education Platform",
+            "client": "EduTech Academy",
+            "description": "Online learning platform with video streaming and course management.",
+            "r1": "5,000+ registered students", "r2": "200+ courses", "r3": "85% completion rate"
+        },
+        "p5": {
+            "title": "Enterprise CRM System",
+            "client": "TechCorp Solutions",
+            "description": "Custom CRM system for customer management and sales pipeline.",
+            "r1": "Managing 10,000+ customers", "r2": "35% increase in sales efficiency", "r3": "70% process automation"
+        },
+        "p6": {
+            "title": "RealEstate Pro Property Website",
+            "client": "RealEstate Pro",
+            "description": "Real estate portal with smart search and 360° virtual tours.",
+            "r1": "50,000+ listings", "r2": "200,000+ monthly visits", "r3": "VR 360° tour integration"
+        }
+    },
+    "newsPage": {
+        "heroTitle": "News & Articles",
+        "heroSubtitle": "Stay updated with the latest technology trends, in-depth knowledge about web design, SEO and digital solutions",
+        "breadcrumbHome": "Home",
+        "breadcrumbNews": "News",
+        "breadcrumbArticle": "Article",
+        "loading": "Loading news...",
+        "loadingArticle": "Loading article...",
+        "emptyTitle": "No articles yet",
+        "emptyDescription": "Please check back later for the latest articles",
+        "readMore": "Read more",
+        "minuteRead": "{minutes} min read",
+        "ctaTitle": "NEMARK – SIMPLE DIGITAL SOLUTIONS FOR EVERYONE",
+        "ctaDescription": "We provide comprehensive technology solutions to help you boost revenue. SEO optimized, beautiful interface and full admin access.",
+        "ctaFeature1": "Standard UX/UI Design",
+        "ctaFeature2": "On-page SEO Optimization",
+        "ctaFeature3": "Custom Domain Connection",
+        "ctaFeature4": "24/7 Technical Support",
+        "ctaButton": "Message us for consultation!"
+    }
+}

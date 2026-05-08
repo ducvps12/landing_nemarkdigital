@@ -1,0 +1,348 @@
+'use client'
+
+import { useState, useEffect } from 'react'
+import Link from 'next/link'
+
+interface HeaderProps {
+    onOpenContactModal: () => void
+}
+
+export default function Header({ onOpenContactModal }: HeaderProps) {
+    const [isScrolled, setIsScrolled] = useState(false)
+    const [showServicesMenu, setShowServicesMenu] = useState(false)
+    const [showStartupMenu, setShowStartupMenu] = useState(false)
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+    // Mobile menu accordion states
+    const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
+    const [mobileWebAppOpen, setMobileWebAppOpen] = useState(false)
+    const [mobileWebsiteOpen, setMobileWebsiteOpen] = useState(false)
+    const [mobileSeoOpen, setMobileSeoOpen] = useState(false)
+    const [mobileInfraOpen, setMobileInfraOpen] = useState(false)
+    const [mobileStartupOpen, setMobileStartupOpen] = useState(false)
+
+    useEffect(() => {
+        // Scroll observer for header background - checks if banner is in view
+        const heroSection = document.querySelector('[data-hero]')
+        if (heroSection) {
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    setIsScrolled(!entries[0]?.isIntersecting)
+                },
+                { threshold: 0.2 }
+            )
+            observer.observe(heroSection)
+            return () => observer.disconnect()
+        } else {
+            setIsScrolled(true)
+        }
+    }, [])
+
+    return (
+        <header
+            className="fixed w-full top-0 z-50 transition-all duration-300 bg-white shadow-lg border-b border-gray-200"
+        >
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between items-center h-20">
+                    {/* Logo */}
+                    <Link href="/" className="shrink-0 flex items-center gap-2 cursor-pointer">
+                        <img
+                            src="/logo.jpg"
+                            alt="Nemark Logo"
+                            className="w-10 h-10 rounded-lg object-cover"
+                        />
+                        <span className="font-display font-bold text-2xl tracking-tight transition-colors text-primary-dark">
+                            Nemark
+                        </span>
+                    </Link>
+
+                    {/* Desktop Navigation */}
+                    <nav className="hidden lg:flex items-center gap-8">
+                        <Link
+                            href="/about"
+                            className="text-sm font-bold transition-colors hover:text-primary hover:underline text-primary-dark uppercase"
+                        >
+                            Giới thiệu
+                        </Link>
+
+                        <div
+                            className="relative group"
+                            onMouseEnter={() => setShowServicesMenu(true)}
+                            onMouseLeave={() => setShowServicesMenu(false)}
+                        >
+                            <button className="flex items-center text-sm font-bold transition-colors hover:text-primary hover:underline text-primary-dark uppercase">
+                                <span>Dịch vụ</span>
+                                <span className="material-icons-outlined text-base ml-1">expand_more</span>
+                            </button>
+                            <div className={`absolute left-1/2 -translate-x-1/2 top-full mt-0 w-[720px] bg-slate-800 rounded-xl shadow-xl border border-slate-700 p-6 transition-all duration-200 origin-top ${showServicesMenu ? 'opacity-100 translate-y-0 visible' : 'opacity-0 translate-y-2 invisible'
+                                }`}>
+                                <div className="grid grid-cols-2 gap-6">
+                                    <div>
+                                        <h4 className="font-display font-bold text-white mb-3 text-sm uppercase tracking-wider">Dịch vụ</h4>
+                                        <ul className="space-y-2">
+                                            <li><Link href="#" className="block text-base text-white hover:text-primary hover:underline font-bold">Thiết kế Web App</Link></li>
+                                            <li><Link href="/dich-vu/thiet-ke-website" className="block text-sm text-slate-300 hover:text-primary hover:underline">Thiết kế Website</Link></li>
+                                            <li><Link href="/services/app-design" className="block text-sm text-slate-300 hover:text-primary hover:underline">Thiết kế App</Link></li>
+                                            <li><Link href="#" className="block text-base text-white hover:text-primary hover:underline font-bold">Giải pháp Website & Hệ thống</Link></li>
+                                            <li><Link href="/services/update-optimization" className="block text-sm text-slate-300 hover:text-primary hover:underline">Nâng cấp & tối ưu website</Link></li>
+                                            <li><Link href="/services/website-maintenance" className="block text-sm text-slate-300 hover:text-primary hover:underline">Bảo trì – vận hành website</Link></li>
+                                            <li><Link href="/services/website-operation" className="block text-sm text-slate-300 hover:text-primary hover:underline">Tăng tốc & bảo mật website</Link></li>
+                                            <li><Link href="/services/api-integration" className="block text-sm text-slate-300 hover:text-primary hover:underline">Tích hợp thanh toán, API, CRM</Link></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <ul className="space-y-2">
+                                            <li><Link href="#" className="block text-base text-white hover:text-primary hover:underline font-bold">Dịch vụ SEO & Marketing số</Link></li>
+                                            <li><Link href="/services/seo" className="block text-sm text-slate-300 hover:text-primary hover:underline">SEO tổng thể website</Link></li>
+                                            <li><Link href="#" className="block text-sm text-slate-300 hover:text-primary hover:underline">Audit & tư vấn SEO</Link></li>
+                                            <li><Link href="#" className="block text-base text-white hover:text-primary hover:underline font-bold">Hạ tầng & Tài khoản số</Link></li>
+                                            <li><Link href="/services/domain-hosting" className="block text-sm text-slate-300 hover:text-primary hover:underline">Domain & Hosting</Link></li>
+                                            <li><Link href="/services/business-email" className="block text-sm text-slate-300 hover:text-primary hover:underline">Email doanh nghiệp</Link></li>
+                                            <li><Link href="/services/vps" className="block text-sm text-slate-300 hover:text-primary hover:underline">VPS (Virtual Private Server)</Link></li>
+                                            <li><Link href="/services/proxy" className="block text-sm text-slate-300 hover:text-primary hover:underline">Proxy / IP Proxy</Link></li>
+                                            <li><Link href="#" className="block text-sm text-slate-300 hover:text-primary hover:underline">Quản lý – vận hành hạ tầng</Link></li>
+                                            <li><Link href="#" className="block text-sm text-slate-300 hover:text-primary hover:underline">Cấu hình – bảo mật hệ thống</Link></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Startup Solutions Menu */}
+                        <div
+                            className="relative group"
+                            onMouseEnter={() => setShowStartupMenu(true)}
+                            onMouseLeave={() => setShowStartupMenu(false)}
+                        >
+                            <button className="flex items-center text-sm font-bold transition-colors hover:text-primary hover:underline text-primary-dark uppercase">
+                                <span>Giải pháp cho Startup</span>
+                                <span className="material-icons-outlined text-base ml-1">expand_more</span>
+                            </button>
+                            <div className={`absolute left-1/2 -translate-x-1/2 top-full mt-0 w-[360px] bg-slate-800 rounded-xl shadow-xl border border-slate-700 p-6 transition-all duration-200 origin-top ${showStartupMenu ? 'opacity-100 translate-y-0 visible' : 'opacity-0 translate-y-2 invisible'
+                                }`}>
+                                <ul className="space-y-2">
+                                    <li><Link href="/solutions/sme" className="block text-sm text-slate-300 hover:text-primary hover:underline font-bold">Giải pháp cho doanh nghiệp nhỏ & SME</Link></li>
+                                    <li><Link href="/solutions/startup" className="block text-sm text-slate-300 hover:text-primary hover:underline font-bold">Giải pháp cho startup</Link></li>
+                                    <li><Link href="/solutions/online-sales" className="block text-sm text-slate-300 hover:text-primary hover:underline font-bold">Giải pháp bán hàng online</Link></li>
+                                    <li><Link href="/solutions/digital-conversion" className="block text-sm text-slate-300 hover:text-primary hover:underline font-bold">Giải pháp chuyển đổi số</Link></li>
+                                    <li><Link href="/solutions/digital-branding" className="block text-sm text-slate-300 hover:text-primary hover:underline font-bold">Giải pháp xây dựng thương hiệu số</Link></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <Link href="/projects" className="text-sm font-bold transition-colors hover:text-primary hover:underline text-primary-dark uppercase">
+                            Dự án
+                        </Link>
+                        <Link href="/careers" className="text-sm font-bold transition-colors hover:text-primary hover:underline text-primary-dark uppercase">
+                            Tuyển dụng
+                        </Link>
+                        <Link href="/news" className="text-sm font-bold transition-colors hover:text-primary hover:underline text-primary-dark uppercase">
+                            Tin Tức
+                        </Link>
+                    </nav>
+
+                    {/* Right Actions */}
+                    <div className="flex items-center gap-4">
+                        {/* CTA Button */}
+                        <button
+                            onClick={onOpenContactModal}
+                            className="hidden sm:inline-flex items-center justify-center gap-2 px-5 py-2.5 border border-transparent text-sm font-medium rounded-full text-white bg-primary hover:bg-primary-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all cursor-pointer"
+                        >
+                            <span className="material-icons-outlined text-base">phone_in_talk</span>
+                            <span className="uppercase">Tư vấn ngay</span>
+                        </button>
+
+                        {/* Mobile Menu Button */}
+                        <button
+                            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                            className="lg:hidden p-2 rounded-md text-primary-dark"
+                        >
+                            <span className="material-icons-outlined">menu</span>
+                        </button>
+                    </div>
+                </div>
+
+                {/* Mobile Menu */}
+                {mobileMenuOpen && (
+                    <div className="lg:hidden py-4 border-t border-slate-200 max-h-[70vh] overflow-y-auto">
+                        <nav className="flex flex-col space-y-1">
+                            <Link
+                                href="/about"
+                                className="text-sm font-medium text-slate-700 hover:text-primary transition-colors py-2"
+                                onClick={() => setMobileMenuOpen(false)}
+                            >
+                                Giới thiệu
+                            </Link>
+
+                            {/* Dịch vụ Section */}
+                            <div className="border-t border-slate-200 pt-2">
+                                <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Thiết kế Web App</p>
+                                <Link
+                                    href="/dich-vu/thiet-ke-website"
+                                    className="text-sm font-medium text-slate-700 hover:text-primary transition-colors block py-1.5 pl-3"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    Thiết kế Website
+                                </Link>
+                                <Link
+                                    href="/services/app-design"
+                                    className="text-sm font-medium text-slate-700 hover:text-primary transition-colors block py-1.5 pl-3"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    Thiết kế App
+                                </Link>
+                            </div>
+
+                            <div className="border-t border-slate-200 pt-2">
+                                <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Giải pháp Website & Hệ thống</p>
+                                <Link
+                                    href="/services/update-optimization"
+                                    className="text-sm font-medium text-slate-700 hover:text-primary transition-colors block py-1.5 pl-3"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    Nâng cấp & tối ưu website
+                                </Link>
+                                <Link
+                                    href="/services/website-maintenance"
+                                    className="text-sm font-medium text-slate-700 hover:text-primary transition-colors block py-1.5 pl-3"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    Bảo trì – vận hành website
+                                </Link>
+                                <Link
+                                    href="/services/website-operation"
+                                    className="text-sm font-medium text-slate-700 hover:text-primary transition-colors block py-1.5 pl-3"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    Tăng tốc & bảo mật website
+                                </Link>
+                                <Link
+                                    href="/services/api-integration"
+                                    className="text-sm font-medium text-slate-700 hover:text-primary transition-colors block py-1.5 pl-3"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    Tích hợp thanh toán, API, CRM
+                                </Link>
+                            </div>
+
+                            <div className="border-t border-slate-200 pt-2">
+                                <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Dịch vụ SEO & Marketing số</p>
+                                <Link
+                                    href="/services/seo"
+                                    className="text-sm font-medium text-slate-700 hover:text-primary transition-colors block py-1.5 pl-3"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    SEO tổng thể website
+                                </Link>
+                            </div>
+
+                            <div className="border-t border-slate-200 pt-2">
+                                <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Hạ tầng & Tài khoản số</p>
+                                <Link
+                                    href="/services/domain-hosting"
+                                    className="text-sm font-medium text-slate-700 hover:text-primary transition-colors block py-1.5 pl-3"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    Domain & Hosting
+                                </Link>
+                                <Link
+                                    href="/services/business-email"
+                                    className="text-sm font-medium text-slate-700 hover:text-primary transition-colors block py-1.5 pl-3"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    Email doanh nghiệp
+                                </Link>
+                                <Link
+                                    href="/services/vps"
+                                    className="text-sm font-medium text-slate-700 hover:text-primary transition-colors block py-1.5 pl-3"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    VPS (Virtual Private Server)
+                                </Link>
+                                <Link
+                                    href="/services/proxy"
+                                    className="text-sm font-medium text-slate-700 hover:text-primary transition-colors block py-1.5 pl-3"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    Proxy / IP Proxy
+                                </Link>
+                            </div>
+
+                            {/* Giải pháp cho Startup Section */}
+                            <div className="border-t border-slate-200 pt-2">
+                                <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">Giải pháp cho Startup</p>
+                                <Link
+                                    href="/solutions/sme"
+                                    className="text-sm font-medium text-slate-700 hover:text-primary transition-colors block py-1.5 pl-3"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    Giải pháp cho doanh nghiệp nhỏ & SME
+                                </Link>
+                                <Link
+                                    href="/solutions/startup"
+                                    className="text-sm font-medium text-slate-700 hover:text-primary transition-colors block py-1.5 pl-3"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    Giải pháp cho startup
+                                </Link>
+                                <Link
+                                    href="/solutions/online-sales"
+                                    className="text-sm font-medium text-slate-700 hover:text-primary transition-colors block py-1.5 pl-3"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    Giải pháp bán hàng online
+                                </Link>
+                                <Link
+                                    href="/solutions/digital-conversion"
+                                    className="text-sm font-medium text-slate-700 hover:text-primary transition-colors block py-1.5 pl-3"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    Giải pháp chuyển đổi số
+                                </Link>
+                                <Link
+                                    href="/solutions/digital-branding"
+                                    className="text-sm font-medium text-slate-700 hover:text-primary transition-colors block py-1.5 pl-3"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                >
+                                    Giải pháp xây dựng thương hiệu số
+                                </Link>
+                            </div>
+
+                            {/* Other main menu items */}
+                            <Link
+                                href="/projects"
+                                className="text-sm font-medium text-slate-700 hover:text-primary transition-colors py-2 border-t border-slate-200 pt-3"
+                                onClick={() => setMobileMenuOpen(false)}
+                            >
+                                Dự án
+                            </Link>
+                            <Link
+                                href="/careers"
+                                className="text-sm font-medium text-slate-700 hover:text-primary transition-colors py-2"
+                                onClick={() => setMobileMenuOpen(false)}
+                            >
+                                Tuyển dụng
+                            </Link>
+                            <Link
+                                href="/news"
+                                className="text-sm font-medium text-slate-700 hover:text-primary transition-colors py-2"
+                                onClick={() => setMobileMenuOpen(false)}
+                            >
+                                Tin Tức
+                            </Link>
+                            <button
+                                onClick={() => {
+                                    setMobileMenuOpen(false)
+                                    onOpenContactModal()
+                                }}
+                                className="text-sm font-bold text-primary hover:underline text-left transition-colors py-2 border-t border-slate-200 pt-3"
+                            >
+                                Liên hệ tư vấn
+                            </button>
+                        </nav>
+                    </div>
+                )}
+            </div>
+        </header>
+    )
+}

@@ -1,0 +1,912 @@
+{
+    "header": {
+        "about": "Giới thiệu",
+        "services": "Dịch vụ",
+        "solutions": "Giải pháp cho Startup",
+        "projects": "Dự án",
+        "careers": "Tuyển dụng",
+        "news": "Tin Tức",
+        "contact": "Tư vấn ngay",
+        "home": "Trang chủ",
+        "contactUs": "Liên hệ",
+        "servicesMenu": {
+            "servicesTitle": "Dịch vụ",
+            "webAppDesign": "Thiết kế Web App",
+            "websiteDesign": "Thiết kế Website",
+            "appDesign": "Thiết kế App",
+            "websiteSolutions": "Giải pháp Website & Hệ thống",
+            "upgradeOptimize": "Nâng cấp & tối ưu website",
+            "maintenance": "Bảo trì – vận hành website",
+            "speedSecurity": "Tăng tốc & bảo mật website",
+            "apiIntegration": "Tích hợp thanh toán, API, CRM",
+            "seoMarketing": "Dịch vụ SEO & Marketing số",
+            "seoOverall": "SEO tổng thể website",
+            "seoAudit": "Audit & tư vấn SEO",
+            "infrastructure": "Hạ tầng & Tài khoản số",
+            "domainHosting": "Domain & Hosting",
+            "businessEmail": "Email doanh nghiệp",
+            "vps": "VPS (Virtual Private Server)",
+            "proxy": "Proxy / IP Proxy",
+            "infraManagement": "Quản lý – vận hành hạ tầng",
+            "systemSecurity": "Cấu hình – bảo mật hệ thống",
+            "aiTools": "Nâng cấp AI Tools",
+            "vpsSetup": "Setup & Tối ưu VPS"
+        },
+        "solutionsMenu": {
+            "sme": "Giải pháp cho doanh nghiệp nhỏ & SME",
+            "startup": "Giải pháp cho startup",
+            "onlineSales": "Giải pháp bán hàng online",
+            "digitalConversion": "Giải pháp chuyển đổi số",
+            "digitalBranding": "Giải pháp xây dựng thương hiệu số"
+        },
+        "mobileMenu": {
+            "services": "Dịch vụ",
+            "solutions": "Giải pháp",
+            "blog": "BLOG NEMARK",
+            "newsLink": "Tin tức",
+            "careersLink": "Tuyển dụng"
+        }
+    },
+    "banner": {
+        "slide": "Slide",
+        "ctaButton": "Tư vấn miễn phí",
+        "slide1": {
+            "badge": "Nemark Digital Solutions",
+            "title": "Kiến tạo giải pháp số Nâng tầm thương hiệu",
+            "subtitle": "Đội ngũ chuyên gia 6+ năm kinh nghiệm, đồng hành cùng 16,000+ doanh nghiệp trong hành trình chuyển đổi số toàn diện."
+        },
+        "slide2": {
+            "badge": "Chiến lược & Sáng tạo",
+            "title": "Tư duy đột phá Giải pháp thực chiến",
+            "subtitle": "Thiết kế Website, App, SEO & Marketing số — mọi giải pháp được cá nhân hóa theo đặc thù kinh doanh của bạn."
+        },
+        "slide3": {
+            "badge": "Đối tác tăng trưởng",
+            "title": "Đồng hành lâu dài Tăng trưởng bền vững",
+            "subtitle": "Hạ tầng VPS/Proxy mạnh mẽ, hỗ trợ kỹ thuật 24/7, bảo mật an toàn — sự an tâm cho mọi doanh nghiệp."
+        }
+    },
+    "intro1": {
+        "stats": {
+            "customers": "Khách hàng",
+            "deployed": "Website / App đã triển khai",
+            "experience": "năm Kinh nghiệm",
+            "vps": "VPS / Proxy",
+            "systems": "Hệ thống",
+            "satisfaction": "Hài lòng"
+        },
+        "text1": "<strong>Nemark</strong> thấu hiểu rằng đằng sau mỗi thương hiệu là một khát vọng vươn xa. Với vai trò là <strong>người đồng hành chiến lược</strong>, chúng tôi mang đến hệ sinh thái <strong>giải pháp toàn diện</strong> để vẽ lại bản đồ tăng trưởng của bạn trên môi trường số – nơi mọi cơ hội kinh doanh đều được nắm bắt và hiện thực hóa một cách trọn vẹn.",
+        "text2": "<strong>Nemark</strong> tự hào là điểm tựa tin cậy của hơn 16.000+ Khách hàng trong suốt hành trình 6 năm định vị và nâng tầm thương hiệu. Với năng lực triển khai 860+ Website/App cùng 500+ hệ thống máy chủ vận hành ổn định, <strong>Nemark</strong> mang đến sự an tâm cho doanh nghiệp – điều đã được khẳng định qua niềm tin và sự hài lòng trọn vẹn của 98% đối tác đã đồng hành."
+    },
+    "intro2": {
+        "row1": {
+            "card1": {
+                "title": "Lý do Nemark được đối tác tin tưởng",
+                "description": "Nemark mang đến điểm tựa vững chắc thông qua các giải pháp Công nghệ & Marketing được cá nhân hóa chuyên sâu."
+            },
+            "card2": {
+                "title": "Đội ngũ trẻ & Tư duy đột phá",
+                "description": "Năng lượng dồi dào, luôn cập nhật công nghệ mới nhất để mang lại giải pháp sáng tạo."
+            },
+            "card3": {
+                "title": "Cải tiến liên tục",
+                "description": "Lấy sự hài lòng làm thước đo, luôn tinh chỉnh dịch vụ vượt trên kỳ vọng."
+            }
+        },
+        "row2": {
+            "card1": {
+                "title": "Chuyên môn cao",
+                "description": "Đội ngũ kỹ sư 5+ năm kinh nghiệm, cập nhật AI, Big Data, Cloud."
+            },
+            "card2": {
+                "title": "Hỗ trợ kỹ thuật 24/7",
+                "description": "Phản hồi sự cố trong 15 phút, hệ thống hoạt động ổn định."
+            },
+            "card3": {
+                "title": "Bảo mật an toàn",
+                "description": "Bảo mật thông tin tiên tiến, bảo vệ dữ liệu vững chắc và tin cậy."
+            },
+            "card4": {
+                "title": "Linh hoạt & Cá nhân hóa",
+                "description": "Thiết kế linh hoạt, tương thích đặc thù kinh doanh từng khách hàng."
+            }
+        }
+    },
+    "solutions": {
+        "subtitle": "Giải pháp",
+        "title": "Giải pháp của chúng tôi",
+        "description": "Hệ sinh thái công nghệ toàn diện giúp doanh nghiệp tăng trưởng bền vững",
+        "learnMore": "Tìm hiểu thêm",
+        "items": {
+            "webDev": {
+                "title": "Lập trình Web",
+                "description": "Xây dựng website chuẩn hiệu suất, dễ mở rộng theo nhu cầu doanh nghiệp."
+            },
+            "appDesign": {
+                "title": "Thiết kế App",
+                "description": "Phát triển ứng dụng di động hiện đại, tối ưu UX trên mọi thiết bị."
+            },
+            "uxui": {
+                "title": "Thiết kế UX/UI",
+                "description": "Tối ưu trải nghiệm giao diện, tăng tương tác và chuyển đổi."
+            },
+            "chatbot": {
+                "title": "Chatbot AI 24/7",
+                "description": "Tự động chăm sóc khách hàng liên tục, không gián đoạn."
+            },
+            "security": {
+                "title": "Bảo mật hệ thống",
+                "description": "Nâng cao tốc độ, bảo mật và độ ổn định cho hệ thống."
+            },
+            "operation": {
+                "title": "Vận hành Website",
+                "description": "Theo dõi, cập nhật và xử lý sự cố, đảm bảo hoạt động liên tục."
+            }
+        }
+    },
+    "feedback": {
+        "badge": "Khách hàng nói gì",
+        "title": "Phản hồi từ đối tác",
+        "description": "Hơn <span>16,000+</span> khách hàng đã tin tưởng và hài lòng với dịch vụ của chúng tôi",
+        "testimonials": {
+            "t1": {
+                "name": "Nguyễn Văn An",
+                "position": "CEO",
+                "company": "Tech Startup ABC",
+                "content": "Nemark đã giúp chúng tôi xây dựng hệ thống quản lý nội bộ hoàn chỉnh. Đội ngũ chuyên nghiệp, tận tâm và luôn sẵn sàng hỗ trợ 24/7. Dự án được bàn giao đúng tiến độ với chất lượng vượt mong đợi."
+            },
+            "t2": {
+                "name": "Trần Thị Bình",
+                "position": "Giám đốc Marketing",
+                "company": "Fashion Brand XYZ",
+                "content": "Website thương mại điện tử do Nemark thiết kế đã giúp doanh thu của chúng tôi tăng 300% trong 6 tháng. Giao diện đẹp, tốc độ nhanh và tối ưu SEO rất tốt. Đặc biệt ấn tượng với dịch vụ hậu mãi."
+            },
+            "t3": {
+                "name": "Lê Hoàng Nam",
+                "position": "Founder",
+                "company": "EdTech Solutions",
+                "content": "Chúng tôi đã hợp tác với nhiều đối tác nhưng Nemark là người hiểu rõ nhất về nhu cầu startup. Họ không chỉ code mà còn tư vấn chiến lược sản phẩm rất sát sao. Highly recommended!"
+            },
+            "t4": {
+                "name": "Phạm Minh Quân",
+                "position": "Trưởng phòng IT",
+                "company": "Manufacturing Corp",
+                "content": "Hệ thống ERP do Nemark triển khai đã số hóa hoàn toàn quy trình sản xuất của chúng tôi. Giảm 60% thời gian xử lý đơn hàng và tăng hiệu quả quản lý. Đầu tư rất xứng đáng!"
+            }
+        }
+    },
+    "projectSection": {
+        "title": "1000+ Dự án tiêu biểu từ",
+        "titleHighlight": "Nemark",
+        "description": "Dưới đây là những dự án thiết kế website trọn gói từ quy mô nhỏ đến lớn, giúp khách hàng tìm được giải pháp nâng tầm thương hiệu và tiếp cận khách hàng tiềm năng trên thị trường trực tuyến",
+        "categories": {
+            "all": "Tất cả",
+            "selling": "Bán hàng",
+            "interior": "Nội thất",
+            "service": "Dịch vụ",
+            "realEstate": "Bất động sản",
+            "intro": "Giới thiệu",
+            "education": "Giáo dục"
+        },
+        "projects": {
+            "p1": "WEBSITE MỸ PHẨM HÀNG CAO CẤP",
+            "p2": "WEBSITE TRANG SỨC",
+            "p3": "WEBSITE BÁN BÓNG THỂ THAO",
+            "p4": "WEBSITE BÁN MÁY PHA CÀ PHÊ",
+            "p5": "WEBSITE KHÓA CỬA THÔNG MINH",
+            "p6": "WEBSITE THỜI TRANG NỮ",
+            "p7": "WEBSITE CHO THUÊ - MUA BÁN SIM SỐ ĐẸP",
+            "p8": "WEBSITE THIẾT BỊ THANG MÁY",
+            "p9": "WEBSITE KHÓA HỌC TARO"
+        }
+    },
+    "cta": {
+        "title": "Hãy Để Nemark Đồng Hành Cùng Bạn",
+        "subtitle": "Liên hệ ngay để được tư vấn miễn phí và nhận báo giá chi tiết",
+        "nameLabel": "Họ và tên",
+        "namePlaceholder": "Nhập họ và tên của bạn",
+        "emailLabel": "Email",
+        "phoneLabel": "Số điện thoại",
+        "serviceLabel": "Dịch vụ quan tâm",
+        "servicePlaceholder": "Chọn dịch vụ",
+        "messageLabel": "Nội dung chi tiết",
+        "messagePlaceholder": "Mô tả chi tiết về yêu cầu của bạn...",
+        "submitting": "Đang gửi...",
+        "submitButton": "Gửi yêu cầu tư vấn",
+        "successMessage": "Gửi yêu cầu thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất.",
+        "errorMessage": "Có lỗi xảy ra. Vui lòng thử lại sau.",
+        "responseNote": "Chúng tôi sẽ phản hồi trong vòng <strong>15 phút</strong>",
+        "bottomText": "NEMARK – Kiến tạo giải pháp Website toàn diện & Tăng trưởng bền vững",
+        "services": {
+            "s1": "Thiết kế Website",
+            "s2": "Thiết kế App",
+            "s3": "SEO & Marketing",
+            "s4": "Giải pháp Startup",
+            "s5": "Hạ tầng & Tài khoản số",
+            "s6": "Bảo trì & Nâng cấp",
+            "s7": "Khác"
+        }
+    },
+    "services": {
+        "subtitle": "Lĩnh vực hoạt động",
+        "title": "Dịch vụ của chúng tôi",
+        "description": "Cung cấp hệ sinh thái giải pháp công nghệ toàn diện giúp doanh nghiệp bứt phá doanh thu.",
+        "detail": "CHI TIẾT",
+        "items": {
+            "websiteDesign": {
+                "title": "Thiết Kế Website",
+                "features": [
+                    "Giao diện chuẩn UI/UX",
+                    "Tối ưu SEO & Tốc độ",
+                    "Tương thích đa thiết bị",
+                    "Bảo mật cao, dễ quản trị",
+                    "Tặng Hosting & Domain"
+                ]
+            },
+            "websiteSolutions": {
+                "title": "Giải Pháp Website & Hệ Thống",
+                "features": [
+                    "Khôi phục Web bị Hack/Mã độc",
+                    "Xử lý lỗi Thanh toán & Vận tin",
+                    "Di dời Hosting & Dữ liệu an toàn",
+                    "Sửa lỗi hiển thị & Xử lý lỗi API",
+                    "Cài đặt SSL & Fix lỗi Plugin"
+                ]
+            },
+            "infrastructure": {
+                "title": "Hạ Tầng & Tài Khoản Số",
+                "features": [
+                    "Cung cấp Domain & Hosting",
+                    "Email doanh nghiệp uy tín",
+                    "VPS & Proxy tốc độ cao",
+                    "Bảo mật & Backup dữ liệu",
+                    "Hỗ trợ kỹ thuật 24/7"
+                ]
+            },
+            "maintenance": {
+                "title": "Bảo Trì & Chăm Sóc Web",
+                "features": [
+                    "Kiểm tra & Fix lỗi định kỳ",
+                    "Backup dữ liệu tự động",
+                    "Rà soát & vá lỗ hổng bảo mật",
+                    "Tối ưu Database & Tốc độ",
+                    "Hỗ trợ thay đổi nội dung nhỏ"
+                ]
+            },
+            "appDesign": {
+                "title": "Thiết Kế App",
+                "features": [
+                    "Số hóa quy trình vận hành",
+                    "Tích hợp CRM, HRM, POS",
+                    "Quản lý & Báo cáo Realtime",
+                    "Bảo mật dữ liệu nội bộ",
+                    "Thiết kế App theo yêu cầu"
+                ]
+            },
+            "seoMarketing": {
+                "title": "Dịch Vụ SEO & Marketing Số",
+                "features": [
+                    "SEO tổng thể bền vững",
+                    "Audit & chuẩn hóa Website",
+                    "Tăng trưởng Traffic tự nhiên",
+                    "Tối ưu tỷ lệ chuyển đổi",
+                    "Phủ sóng thương hiệu"
+                ]
+            },
+            "crm": {
+                "title": "Phần Mềm Quản Trị (CRM/HRM)",
+                "features": [
+                    "Quản lý khách hàng & Sales",
+                    "Chấm công & Tính lương tự động",
+                    "Kiểm soát kho & Đơn hàng",
+                    "Báo cáo chi tiết Realtime",
+                    "Phân quyền bảo mật đa cấp"
+                ]
+            },
+            "customApp": {
+                "title": "Lập Trình App Theo Yêu Cầu",
+                "features": [
+                    "Phân tích quy trình doanh nghiệp",
+                    "Thiết kế Dashboard chuyên biệt",
+                    "Xử lý luồng dữ liệu phức tạp",
+                    "Tích hợp API bên thứ ba",
+                    "Bàn giao Source Code gốc"
+                ]
+            }
+        }
+    },
+    "projects": {
+        "subtitle": "DỰ ÁN",
+        "title": "Dự Án Nổi Bật",
+        "viewAll": "Xem tất cả dự án",
+        "categories": {
+            "selling": "Bán hàng",
+            "intro": "Giới thiệu",
+            "interior": "Nội thất",
+            "service": "Dịch vụ"
+        }
+    },
+    "footer": {
+        "companyName": "CÔNG TY TNHH TRUYỀN THÔNG GIẢI PHÁP SỐ NEMARK",
+        "taxId": "MST: 0111278699",
+        "addressFull": "Địa chỉ: Số nhà 19, Đường 452, Thôn Linh Sơn, Xã Hạ Bằng, Thành phố Hà Nội, Việt Nam",
+        "phone": "0914659183",
+        "email": "support@nemarkdigital.com",
+        "services": "Dịch vụ",
+        "infoTitle": "THÔNG TIN",
+        "info": {
+            "about": "Giới thiệu về Nemark",
+            "experts": "Đội ngũ chuyên gia",
+            "partners": "Đối tác & Khách hàng",
+            "careers": "Tuyển dụng",
+            "cooperation": "Liên hệ hợp tác"
+        },
+        "supportTitle": "HỖ TRỢ",
+        "support": {
+            "privacy": "Chính sách bảo mật thông tin",
+            "payment": "Chính sách thanh toán & Hoàn tiền",
+            "warranty": "Chính sách bảo hành & Bảo trì",
+            "delivery": "Quy trình bàn giao sản phẩm",
+            "complaints": "Quy định khiếu nại & Xử lý sự cố",
+            "invoice": "Hướng dẫn xuất hóa đơn VAT",
+            "feedback": "Góp ý chất lượng dịch vụ"
+        },
+        "serviceLinks": {
+            "websiteDesign": "Thiết kế Website",
+            "appDesign": "Thiết kế App",
+            "upgradeOptimize": "Nâng cấp & tối ưu website",
+            "maintenance": "Bảo trì – vận hành website",
+            "speedSecurity": "Tăng tốc & bảo mật website",
+            "apiIntegration": "Tích hợp thanh toán, API, CRM",
+            "seo": "SEO tổng thể website",
+            "domainHosting": "Domain & Hosting",
+            "businessEmail": "Email doanh nghiệp",
+            "vps": "VPS (Virtual Private Server)",
+            "proxy": "Proxy / IP Proxy"
+        },
+        "connectTitle": "Kết nối với chúng tôi",
+        "officeAddress": "Địa chỉ văn phòng",
+        "copyright": "© 2026 Nemark Network. All rights reserved.",
+        "consultNow": "Tư vấn ngay"
+    },
+    "mauWebsite": {
+        "heroTitle": "Bộ Sưu Tập",
+        "heroTitleHighlight": "Mẫu Website",
+        "heroDescription": "Khám phá hơn 100+ mẫu website đẹp, hiện đại và chuyên nghiệp. Tất cả đều được tối ưu SEO và responsive trên mọi thiết bị.",
+        "updating": "Cập nhật liên tục",
+        "rating": "Đánh giá 4.8/5",
+        "searchPlaceholder": "Tìm kiếm mẫu website...",
+        "templates": "mẫu website",
+        "noResults": "Không tìm thấy kết quả",
+        "noResultsDesc": "Thử tìm kiếm với từ khóa khác hoặc chọn danh mục khác",
+        "contactPrice": "Liên hệ",
+        "categories": {
+            "all": "Tất cả",
+            "fashion": "Thời trang",
+            "selling": "Bán hàng",
+            "cosmetics": "Mỹ phẩm",
+            "interior": "Nội thất",
+            "service": "Dịch vụ",
+            "realEstate": "Bất động sản",
+            "education": "Giáo dục"
+        },
+        "websiteTitles": {
+            "w1": "Website Mỹ Phẩm Cao Cấp",
+            "w2": "Website Trang Sức Cao Cấp",
+            "w3": "Website Bán Bóng Thể Thao",
+            "w4": "Website Khóa Cửa Thông Minh",
+            "w5": "Website Máy Pha Cà Phê",
+            "w6": "Website Thời Trang Nữ"
+        }
+    },
+    "common": {
+        "learnMore": "Tìm hiểu thêm",
+        "contactUs": "Liên hệ",
+        "getStarted": "Bắt đầu ngay",
+        "viewMore": "Xem thêm",
+        "close": "Đóng",
+        "send": "Gửi",
+        "language": "Ngôn ngữ"
+    },
+    "contactModal": {
+        "title": "Liên hệ tư vấn",
+        "subtitle": "Chúng tôi sẽ phản hồi trong vòng 15 phút",
+        "nameLabel": "Họ và tên",
+        "namePlaceholder": "Nhập họ và tên của bạn",
+        "emailLabel": "Email",
+        "phoneLabel": "Số điện thoại",
+        "serviceLabel": "Dịch vụ quan tâm",
+        "servicePlaceholder": "Chọn dịch vụ",
+        "messageLabel": "Nội dung chi tiết",
+        "messagePlaceholder": "Mô tả chi tiết về yêu cầu của bạn...",
+        "submitting": "Đang gửi...",
+        "submitButton": "Gửi yêu cầu",
+        "close": "Đóng",
+        "successMessage": "Gửi yêu cầu thành công! Chúng tôi sẽ liên hệ với bạn sớm nhất.",
+        "errorMessage": "Có lỗi xảy ra. Vui lòng thử lại sau.",
+        "services": {
+            "s1": "Thiết kế Website",
+            "s2": "Thiết kế App",
+            "s3": "SEO & Marketing",
+            "s4": "Giải pháp Startup",
+            "s5": "Hạ tầng & Tài khoản số",
+            "s6": "Bảo trì & Nâng cấp",
+            "s7": "Khác"
+        }
+    },
+    "aiToolsPage": {
+        "hero": {
+            "badge": "AI Tools & Premium Subscriptions",
+            "title1": "Nâng cấp ",
+            "titleHighlight": "AI Tools",
+            "title2": "Mở khóa sức mạnh AI",
+            "subtitle": "Dịch vụ tư vấn & hỗ trợ nâng cấp ChatGPT Plus, Gemini Ultra, CapCut Pro — thanh toán quốc tế dễ dàng, kích hoạt nhanh chóng, hỗ trợ tận tâm 24/7.",
+            "viewPricing": "Xem bảng giá",
+            "consultNow": "Tư vấn ngay",
+            "usersCount": "khách hàng đã sử dụng",
+            "chatgpt": "ChatGPT Plus",
+            "chatgptDesc": "GPT-5.4, DALL·E 4, Advanced Analytics",
+            "gemini": "Gemini Ultra",
+            "geminiDesc": "Google AI mạnh nhất, Gemini 3.1 Pro, 2M token",
+            "capcut": "CapCut Pro",
+            "capcutDesc": "Video editing không giới hạn",
+            "more": "Và nhiều hơn",
+            "moreDesc": "Cursor, Midjourney, Claude Pro..."
+        },
+        "benefits": {
+            "sectionLabel": "Lợi ích",
+            "title": "Tại sao chọn dịch vụ AI Tools của Nemark?",
+            "subtitle": "Giải pháp nâng cấp AI Tools toàn diện, tiết kiệm thời gian và chi phí cho doanh nghiệp",
+            "b1Title": "Thanh toán quốc tế dễ dàng",
+            "b1Desc": "Không cần thẻ Visa/Mastercard quốc tế. Nemark hỗ trợ thanh toán hộ, chuyển khoản nội địa tiện lợi.",
+            "b2Title": "Kích hoạt nhanh chóng",
+            "b2Desc": "Tài khoản được kích hoạt trong vòng 15 phút sau khi thanh toán. Sử dụng ngay lập tức.",
+            "b3Title": "Tài khoản chính hãng 100%",
+            "b3Desc": "Tất cả subscription đều được mua trực tiếp từ nhà cung cấp chính thức, đảm bảo an toàn.",
+            "b4Title": "Hỗ trợ kỹ thuật 24/7",
+            "b4Desc": "Đội ngũ support túc trực, hỗ trợ xử lý mọi vấn đề liên quan đến tài khoản nhanh chóng.",
+            "b5Title": "Hướng dẫn sử dụng chi tiết",
+            "b5Desc": "Cung cấp tài liệu & video hướng dẫn tận dụng tối đa các tính năng premium.",
+            "b6Title": "Gia hạn tự động & ưu đãi",
+            "b6Desc": "Hỗ trợ gia hạn định kỳ, giá ưu đãi cho khách hàng thân thiết & gói dài hạn."
+        },
+        "pricing": {
+            "sectionLabel": "Bảng giá",
+            "title": "Chọn gói AI Tool phù hợp",
+            "subtitle": "Phí dịch vụ bao gồm: tư vấn, mua hộ subscription chính hãng, kích hoạt & hỗ trợ kỹ thuật",
+            "popular": "PHỔ BIẾN",
+            "contactPrice": "Liên hệ",
+            "cta": "Tư vấn & Đặt mua",
+            "chatgptName": "ChatGPT Plus",
+            "chatgptTag": "OpenAI",
+            "chatgptDesc": "Truy cập GPT-5.4, DALL·E 4, Sora video và tất cả tính năng premium.",
+            "chatgptF1": "GPT-5.4 & GPT-5.4 mini không giới hạn",
+            "chatgptF2": "DALL·E 4 tạo hình ảnh AI chất lượng cao",
+            "chatgptF3": "Advanced Data Analysis & Code Interpreter",
+            "chatgptF4": "Custom GPTs & GPT Store",
+            "chatgptF5": "Sora video generation & Web browsing",
+            "chatgptF6": "Hỗ trợ API key (tùy chọn)",
+            "geminiName": "Gemini Ultra",
+            "geminiTag": "Google AI",
+            "geminiDesc": "Google AI mạnh nhất với Gemini 3.1 Pro, 2M token context, tích hợp toàn bộ hệ sinh thái Google.",
+            "geminiF1": "Gemini 3.1 Pro model mới nhất (03/2026)",
+            "geminiF2": "2 triệu token context window",
+            "geminiF3": "Tích hợp Google Workspace & Docs",
+            "geminiF4": "Notebook LM Plus & Gems AI",
+            "geminiF5": "AI Studio & Vertex AI access",
+            "geminiF6": "30TB Google One storage",
+            "capcutName": "CapCut Pro",
+            "capcutTag": "ByteDance",
+            "capcutDesc": "Chỉnh sửa video chuyên nghiệp, kho template & effects premium không giới hạn.",
+            "capcutF1": "Xuất video 4K không watermark",
+            "capcutF2": "Kho 500,000+ template premium",
+            "capcutF3": "AI Background Remover",
+            "capcutF4": "Cloud storage 100GB",
+            "capcutF5": "Âm nhạc bản quyền unlimited",
+            "capcutF6": "AI Text-to-Speech đa ngôn ngữ",
+            "extraNote": "Ngoài ra Nemark còn hỗ trợ:",
+            "extraTools": "Cursor Pro, Claude Pro, Midjourney, Notion AI, Canva Pro",
+            "extraCta": "Liên hệ để biết thêm →"
+        },
+        "process": {
+            "sectionLabel": "Quy trình",
+            "title": "4 bước đơn giản để bắt đầu",
+            "subtitle": "Quy trình nhanh gọn, từ tư vấn đến kích hoạt chỉ trong 15 phút",
+            "s1Title": "Liên hệ tư vấn",
+            "s1Desc": "Gửi yêu cầu qua form, Zalo hoặc hotline. Nemark tư vấn gói phù hợp nhất với nhu cầu của bạn.",
+            "s2Title": "Chọn gói & Thanh toán",
+            "s2Desc": "Chọn AI tool cần nâng cấp. Thanh toán bằng chuyển khoản ngân hàng, Momo, ZaloPay hoặc tiền mặt.",
+            "s3Title": "Kích hoạt tài khoản",
+            "s3Desc": "Nemark mua subscription chính hãng và kích hoạt cho tài khoản của bạn trong vòng 15 phút.",
+            "s4Title": "Hướng dẫn & Hỗ trợ",
+            "s4Desc": "Nhận tài liệu hướng dẫn sử dụng chi tiết. Đội ngũ support hỗ trợ xuyên suốt thời gian sử dụng."
+        }
+    },
+    "vpsSetupPage": {
+        "hero": {
+            "badge": "Uptime 99.99%",
+            "title1": "Setup & Tối ưu ",
+            "titleHighlight": "VPS",
+            "title2": "Chuyên nghiệp",
+            "subtitle": "Dịch vụ cài đặt, tối ưu hiệu năng & bảo mật VPS toàn diện. Bao gồm Game Server Hosting cho Minecraft, Rust, ARK và nhiều game khác.",
+            "viewPricing": "Xem bảng giá",
+            "consultNow": "Tư vấn ngay"
+        },
+        "benefits": {
+            "sectionLabel": "Dịch vụ",
+            "title": "Dịch vụ Setup & Tối ưu VPS toàn diện",
+            "subtitle": "Từ cài đặt cơ bản đến tối ưu hiệu năng cao cấp, Nemark lo trọn gói",
+            "b1Title": "Tối ưu tốc độ x3",
+            "b1Desc": "Fine-tune NGINX, MySQL, PHP, cache system giúp website/app chạy nhanh gấp 3 lần so với cấu hình mặc định.",
+            "b2Title": "Bảo mật nâng cao",
+            "b2Desc": "Cấu hình Firewall, Fail2Ban, SSL/TLS, WAF. Chặn DDoS, brute force & các cuộc tấn công phổ biến.",
+            "b3Title": "Game Server Hosting",
+            "b3Desc": "Setup server game hợp pháp: Minecraft, Rust, ARK, CS2, Valheim. Tối ưu JVM, anti-lag, plugin quản lý.",
+            "b4Title": "Backup tự động",
+            "b4Desc": "Hệ thống backup hàng ngày, tuần, tháng. Lưu trữ multi-location đảm bảo dữ liệu an toàn tuyệt đối.",
+            "b5Title": "Monitoring 24/7",
+            "b5Desc": "Giám sát CPU, RAM, Disk, Network realtime. Cảnh báo tức thì khi phát hiện bất thường qua Telegram/Email.",
+            "b6Title": "Tư vấn cấu hình tối ưu",
+            "b6Desc": "Đội ngũ kỹ sư 5+ năm kinh nghiệm tư vấn cấu hình VPS phù hợp nhất với nhu cầu và ngân sách."
+        },
+        "pricing": {
+            "sectionLabel": "Bảng giá",
+            "title": "Gói dịch vụ Setup & Tối ưu VPS",
+            "subtitle": "Phí setup một lần, bao gồm toàn bộ cài đặt, tối ưu và hỗ trợ kỹ thuật",
+            "popular": "PHỔ BIẾN",
+            "contactPrice": "Liên hệ",
+            "cta": "Tư vấn & Đặt dịch vụ",
+            "basicName": "Basic",
+            "basicTag": "Setup cơ bản",
+            "basicDesc": "Cài đặt & tối ưu VPS cho website/app cơ bản, phù hợp doanh nghiệp nhỏ.",
+            "basicF1": "Cài đặt LEMP/LAMP Stack",
+            "basicF2": "Cấu hình SSL miễn phí",
+            "basicF3": "Tối ưu PHP & MySQL cơ bản",
+            "basicF4": "Setup Firewall (UFW)",
+            "basicF5": "Hướng dẫn quản trị cơ bản",
+            "basicF6": "Hỗ trợ 7 ngày sau setup",
+            "proName": "Pro",
+            "proTag": "Setup nâng cao",
+            "proDesc": "Tối ưu hiệu năng cao + bảo mật nâng cao + monitoring, phù hợp doanh nghiệp vừa.",
+            "proF1": "Tất cả tính năng Basic",
+            "proF2": "Tối ưu NGINX FastCGI Cache",
+            "proF3": "Cấu hình Redis/Memcached",
+            "proF4": "Bảo mật: Fail2Ban + WAF + ModSecurity",
+            "proF5": "Setup monitoring Grafana/Prometheus",
+            "proF6": "Backup tự động hàng ngày",
+            "proF7": "Cảnh báo Telegram/Email",
+            "proF8": "Hỗ trợ kỹ thuật 30 ngày",
+            "gameName": "Game Server",
+            "gameTag": "Gaming hosting",
+            "gameDesc": "Setup server game hợp pháp trên VPS: Minecraft, Rust, ARK, CS2, Valheim...",
+            "gameF1": "Cài đặt game server theo yêu cầu",
+            "gameF2": "Tối ưu JVM flags & network",
+            "gameF3": "Anti-lag & TPS optimization",
+            "gameF4": "Plugin management (BungeeCord, Velocity)",
+            "gameF5": "DDoS Protection setup",
+            "gameF6": "Auto-restart & crash recovery",
+            "gameF7": "Backup world data tự động",
+            "gameF8": "Hỗ trợ kỹ thuật 30 ngày",
+            "gameNoteTitle": "Game Server hợp pháp",
+            "gameNoteDesc": "Nemark chỉ hỗ trợ setup server cho các game cho phép hosting chính thức: Minecraft (Java & Bedrock), Rust, ARK: Survival Evolved, Counter-Strike 2, Valheim, Terraria, 7 Days to Die, Project Zomboid và nhiều game khác. Liên hệ để được tư vấn game phù hợp."
+        },
+        "process": {
+            "sectionLabel": "Quy trình",
+            "title": "Quy trình triển khai chuyên nghiệp",
+            "subtitle": "Từ khảo sát đến bàn giao, mọi thứ được thực hiện bài bản và minh bạch",
+            "s1Title": "Khảo sát nhu cầu",
+            "s1Desc": "Tìm hiểu mục đích sử dụng VPS, traffic dự kiến, stack công nghệ để tư vấn cấu hình tối ưu nhất.",
+            "s2Title": "Tư vấn cấu hình",
+            "s2Desc": "Đề xuất nhà cung cấp VPS, cấu hình phần cứng, hệ điều hành và phần mềm phù hợp với ngân sách.",
+            "s3Title": "Setup & Tối ưu",
+            "s3Desc": "Cài đặt toàn bộ stack, tối ưu hiệu năng, cấu hình bảo mật, thiết lập monitoring và backup tự động.",
+            "s4Title": "Bàn giao & Hỗ trợ",
+            "s4Desc": "Bàn giao tài liệu chi tiết, hướng dẫn quản trị. Hỗ trợ kỹ thuật liên tục trong thời gian cam kết."
+        }
+    },
+    "domainHostingPage": {
+        "hero": {
+            "badge": "Nemark cung cấp giải pháp toàn diện",
+            "title": "DỊCH VỤ HOSTING VÀ DOMAIN",
+            "subtitle": "UY TÍN CHẤT LƯỢNG CAO",
+            "description": "Nemark cung cấp giải pháp Tên miền & Hosting với chi phí tối ưu, cam kết hiệu năng mạnh mẽ và vô cùng linh hoạt. Chúng tôi mang đến dịch vụ Hosting với băng thông không giới hạn, giúp website của bạn hoạt động mượt mà.",
+            "buyNow": "MUA NGAY",
+            "consult": "Liên hệ tư vấn"
+        },
+        "hosting": {
+            "title": "HOSTING",
+            "storageLabel": "Dung lượng:",
+            "cpuLabel": "CPU / RAM:",
+            "domainLabel": "Domain / MySQL:",
+            "cta": "Đăng ký ngay",
+            "perMonth": "Tháng",
+            "plans": {
+                "p1": "Gói Sinh Viên",
+                "p2": "Gói Cá Nhân",
+                "p3": "Gói Cá Nhân +",
+                "p4": "Gói Doanh Nghiệp",
+                "p5": "Gói TMĐT",
+                "p6": "Gói Chuyên Nghiệp"
+            }
+        },
+        "domain": {
+            "title": "DOMAIN",
+            "thName": "Tên miền",
+            "thPrice": "Giá đăng ký",
+            "thNote": "Ghi chú",
+            "vnSeeDetails": "Xem bảng giá chi tiết bên dưới",
+            "vnMultiType": "Nhiều phân loại",
+            "comMostPopular": "Phổ biến nhất",
+            "netNetwork": "Mạng lưới",
+            "priceNote": "* Giá chưa bao gồm VAT. Xem bảng giá chi tiết bên dưới."
+        },
+        "vnDomain": {
+            "title": "Bảng giá Tên Miền Việt Nam",
+            "thCategory": "Miền VN",
+            "thTld": "TLDs",
+            "thRegistration": "Phí đăng ký",
+            "thRenewal": "Phí duy trì",
+            "thTransfer": "Phí Transfer",
+            "categoryLabel": "Miền VN",
+            "note": "* Giá đã bao gồm VAT. Liên hệ để được tư vấn tên miền phù hợp nhất."
+        },
+        "intlDomain": {
+            "title": "Bảng giá Tên Miền Quốc Tế",
+            "thCategory": "Miền Quốc Tế",
+            "thTld": "TLDs",
+            "thRegistration": "Phí đăng ký",
+            "thRenewal": "Phí duy trì",
+            "thTransfer": "Phí Transfer",
+            "categoryLabel": "Miền Quốc Tế",
+            "importantNote": "Lưu ý quan trọng:",
+            "importantText": "Không phải dịch vụ domain giá rẻ nào cũng đáng tin cậy và mang lại trải nghiệm tốt. Tại Nemark, chúng tôi cam kết cung cấp tên miền chất lượng, đăng ký nhanh chóng và chi phí miết kiệm. Nếu bạn đang tìm kiếm domain uy tín cho website cá nhân hoặc doanh nghiệp, hãy gọi hotline",
+            "importantCta": "để được tư vấn chi tiết ngay hôm nay!",
+            "note": "* Giá đã bao gồm VAT. Liên hệ để được tư vấn tên miền phù hợp nhất."
+        },
+        "process": {
+            "title": "QUY TRÌNH",
+            "stepLabel": "Bước",
+            "s1Title": "Khảo sát & Phân tích",
+            "s1Desc": "Khảo sát & Phân tích nghiệp vụ",
+            "s2Title": "Thiết kế hướng dẫn",
+            "s2Desc": "Thiết kế hướng dẫn liệu",
+            "s3Title": "Lập trình & API",
+            "s3Desc": "Lập trình & Đấu nối API",
+            "s4Title": "Kiểm thử",
+            "s4Desc": "Kiểm thử nội trường giả lập",
+            "s5Title": "Triển khai",
+            "s5Desc": "Triển khai thực tế",
+            "s6Title": "Bàn giao",
+            "s6Desc": "Bàn giao tài liệu & Đào tạo"
+        }
+    },
+    "careersPage": {
+        "hero": {
+            "title": "Cùng Nemark Xây Dựng Tương Lai Số",
+            "subtitle": "Tham gia đội ngũ chuyên gia công nghệ hàng đầu. Nơi bạn được thể hiện tài năng, phát triển kỹ năng và tạo ra những sản phẩm có giá trị thực sự.",
+            "viewPositions": "Xem vị trí tuyển dụng",
+            "companyCulture": "Văn hóa công ty"
+        },
+        "benefits": {
+            "sectionLabel": "Tại sao chọn Nemark?",
+            "title": "Phúc lợi & Môi trường làm việc",
+            "subtitle": "Chúng tôi tin rằng nhân viên hạnh phúc sẽ tạo ra sản phẩm tuyệt vời",
+            "b1Title": "Lương thưởng hấp dẫn",
+            "b1Desc": "Mức lương cạnh tranh, thưởng theo hiệu suất và dự án",
+            "b2Title": "Bảo hiểm đầy đủ",
+            "b2Desc": "BHXH, BHYT đầy đủ + Bảo hiểm sức khỏe cao cấp",
+            "b3Title": "Làm việc linh hoạt",
+            "b3Desc": "Hybrid working, flexible time, work-life balance",
+            "b4Title": "Đào tạo & Phát triển",
+            "b4Desc": "Ngân sách đào tạo, khóa học chuyên môn, hội thảo",
+            "b5Title": "Hoạt động nội bộ",
+            "b5Desc": "Team building, du lịch, sinh nhật, sự kiện hàng tháng",
+            "b6Title": "Cơ hội thăng tiến",
+            "b6Desc": "Lộ trình thăng tiến rõ ràng, review 6 tháng/lần"
+        },
+        "positions": {
+            "sectionLabel": "Cơ hội nghề nghiệp",
+            "title": "Vị trí đang tuyển dụng",
+            "subtitle": "Khám phá các vị trí phù hợp với kỹ năng và đam mê của bạn",
+            "requirementsLabel": "Yêu cầu",
+            "benefitsLabel": "Quyền lợi",
+            "salaryLabel": "Mức lương",
+            "perMonth": "VNĐ/tháng",
+            "applyNow": "Ứng tuyển ngay",
+            "job1": {
+                "title": "Nhân Viên Kinh Doanh (Sale)",
+                "department": "Kinh doanh",
+                "location": "Hà Nội",
+                "type": "Full-time",
+                "salary": "8-15 triệu + Hoa hồng",
+                "description": "Tìm kiếm nhân viên kinh doanh năng động, chủ động tìm kiếm khách hàng, tư vấn dịch vụ thiết kế website, app, giải pháp công nghệ cho doanh nghiệp. Thu nhập không giới hạn theo năng lực.",
+                "req1": "Không yêu cầu kinh nghiệm, ưu tiên có kinh nghiệm sale B2B",
+                "req2": "Kỹ năng giao tiếp, thuyết phục tốt",
+                "req3": "Chủ động, chịu áp lực KPI",
+                "req4": "Sử dụng thành thạo mạng xã hội (Facebook, Zalo, LinkedIn)",
+                "req5": "Có laptop/điện thoại cá nhân để làm việc",
+                "ben1": "Lương cứng + hoa hồng hấp dẫn (5-15% giá trị hợp đồng)",
+                "ben2": "Không giới hạn thu nhập, top sale nhận thưởng nóng",
+                "ben3": "Đào tạo sản phẩm và kỹ năng bán hàng miễn phí",
+                "ben4": "Làm việc linh hoạt, có thể remote",
+                "ben5": "Cơ hội lên trưởng nhóm kinh doanh nhanh"
+            },
+            "job2": {
+                "title": "Lập Trình Viên Java Game (NRO / Game Mobile)",
+                "department": "Phát triển Game",
+                "location": "Remote",
+                "type": "Full-time / Part-time",
+                "salary": "10-25 triệu",
+                "description": "Tuyển lập trình viên Java có kinh nghiệm phát triển game mobile dạng NRO (Ngọc Rồng Online), game 2D server-client. Tham gia xây dựng, vận hành và phát triển tính năng cho các dự án game.",
+                "req1": "Thành thạo Java SE/Java Core, lập trình hướng đối tượng (OOP)",
+                "req2": "Có kinh nghiệm hoặc hiểu biết về cấu trúc game NRO, game mobile 2D",
+                "req3": "Biết làm việc với Socket, đa luồng (Thread), xử lý dữ liệu nhân vật",
+                "req4": "Kinh nghiệm với MySQL hoặc các hệ quản trị CSDL",
+                "req5": "Ưu tiên: Từng mod/dev private server NRO hoặc game tương tự",
+                "ben1": "Làm việc remote 100%, giờ giấc linh hoạt",
+                "ben2": "Thưởng theo sản phẩm và tính năng hoàn thành",
+                "ben3": "Được tiếp cận source code và hệ thống game thực tế",
+                "ben4": "Môi trường làm việc thoải mái, ít bureaucracy",
+                "ben5": "Cơ hội cùng phát triển dự án game dài hạn"
+            },
+            "job3": {
+                "title": "Fresher / Thực Tập Sinh IT",
+                "department": "Đào tạo & Phát triển",
+                "location": "Hà Nội / Remote",
+                "type": "Full-time / Thực tập",
+                "salary": "3-8 triệu",
+                "description": "Chào đón các bạn sinh viên IT, fresher mới ra trường muốn học hỏi thực tế. Bạn sẽ được đào tạo trực tiếp, tham gia dự án thật và phát triển kỹ năng nhanh chóng. Nemark tìm người chịu khó, ham học — không cần giỏi sẵn.",
+                "req1": "Sinh viên năm cuối hoặc mới tốt nghiệp ngành CNTT, KHMT hoặc liên quan",
+                "req2": "Biết cơ bản HTML, CSS, JavaScript hoặc Java, PHP (tùy vị trí)",
+                "req3": "Ham học hỏi, chịu khó, không ngại làm việc nhiều",
+                "req4": "Có máy tính cá nhân để làm việc",
+                "req5": "Ưu tiên: Có project cá nhân hoặc từng làm freelance",
+                "ben1": "Được mentor 1-1, đào tạo thực chiến qua dự án thật",
+                "ben2": "Trợ cấp thực tập + thưởng nếu hoàn thành tốt",
+                "ben3": "Cơ hội trở thành nhân viên chính thức sau 2-3 tháng",
+                "ben4": "Làm việc linh hoạt, phù hợp sinh viên",
+                "ben5": "Tích lũy kinh nghiệm thực tế cho CV"
+            }
+        }
+    },
+    "aboutPage": {
+        "hero": {
+            "badge": "Về chúng tôi",
+            "title": "GIỚI THIỆU VỀ",
+            "titleHighlight": "NEMARK",
+            "subtitle": "Đội ngũ phát triển trẻ, tận tâm và đầy sáng tạo — kiến tạo giải pháp số hiện đại cho doanh nghiệp Việt."
+        },
+        "introduction": {
+            "title1": "Đội ngũ phát triển trẻ và đầy tham vọng",
+            "title2": "kiến tạo giải pháp web hiện đại",
+            "p1": "Thành lập vào <strong>tháng 11/2025</strong>, <strong>NEMARK Dev</strong> là đội ngũ phát triển trẻ và đầy tham vọng, quy tụ những kỹ sư tài năng đam mê xây dựng các sản phẩm web đáng tin cậy, có khả năng mở rộng và lấy người dùng làm trung tâm.",
+            "p2": "Dù mới thành lập, mỗi thành viên đều đóng góp <strong>kỹ năng kỹ thuật vững chắc</strong> và tinh thần cống hiến mạnh mẽ để mang đến sản phẩm chất lượng. Chúng tôi đề cao kiến trúc sạch (Clean Architecture), chuyển động UI tinh tế và tối ưu hóa hiệu suất trong mọi dự án.",
+            "p3": "Các hiệu ứng animation và tương tác được thiết kế cẩn thận nhằm <strong>hướng dẫn người dùng</strong>, giảm ma sát và nâng cao trải nghiệm sử dụng — thay vì gây phân tán. <strong>NEMARK Dev</strong> cam kết biến ý tưởng thành những sản phẩm số sạch sẽ, có khả năng mở rộng và hiệu suất cao."
+        },
+        "vision": {
+            "title": "Tầm Nhìn",
+            "tagline": "Tiên phong trong lĩnh vực giải pháp số lấy người dùng làm trung tâm",
+            "p1": "Xuất phát từ <strong>đam mê công nghệ và khát vọng đổi mới</strong>, NEMARK hướng đến trở thành đội ngũ trẻ tiên phong trong lĩnh vực giải pháp số, xây dựng các sản phẩm web <strong>đáng tin cậy, có khả năng mở rộng</strong> và lấy người dùng làm trung tâm.",
+            "p2": "Chúng tôi không ngừng đổi mới, sáng tạo và kiến tạo các giải pháp thiết thực với <strong>kiến trúc sạch, hiệu suất cao</strong>, giúp <strong>doanh nghiệp Việt</strong> tự tin phát triển bền vững trong kỷ nguyên số."
+        },
+        "mission": {
+            "title": "Sứ Mệnh",
+            "tagline": "Biến ý tưởng thành sản phẩm số xuất sắc",
+            "content": "Sứ mệnh của <strong>NEMARK</strong> là phá bỏ mọi rào cản công nghệ để giải phóng sức mạnh cho cộng đồng doanh nghiệp Việt. Chúng tôi cam kết mang giải pháp công nghệ chuyên sâu đến với hàng triệu khách hàng với chi phí tối ưu, kiến tạo nền tảng website chuẩn SEO bền vững – những \"đại sứ số\" hoạt động 24/7. <strong>NEMARK</strong> đồng hành giải quyết mọi bài toán kỹ thuật, giúp <strong>doanh nghiệp</strong> tập trung trọn vẹn vào mục tiêu tăng trưởng cốt lõi."
+        },
+        "leadership": {
+            "title": "Đội Ngũ Ban Lãnh Đạo",
+            "subtitle": "Những thuyền trưởng tài ba dẫn dắt con tàu NEMARK vươn ra biển lớn.",
+            "ceoQuote": "\"Lãnh đạo không phải là chức danh, đó là hành động và ví dụ.\"",
+            "connect": "Connect"
+        },
+        "culture": {
+            "badge": "Văn hóa doanh nghiệp",
+            "title": "Sức mạnh tập thể - Kiến tạo thành công",
+            "subtitle": "Tại NEMARK, mỗi cá nhân là một mảnh ghép quan trọng tạo nên bức tranh thành công chung của cả tập thể.",
+            "joinTeam": "Gia nhập đội ngũ",
+            "learnMore": "Tìm hiểu thêm"
+        },
+        "testimonials": {
+            "sectionLabel": "Lắng nghe ý kiến",
+            "title1": "KHÁCH HÀNG NÓI GÌ",
+            "title2": "VỀ NEMARK",
+            "subtitle": "Đội ngũ Nemark làm việc chuyên nghiệp, tận tâm và mang lại giải pháp công nghệ vượt mong đợi. Chúng tôi tự hào được đồng hành cùng sự thành công của các đối tác.",
+            "trustedPartner": "Đối tác tin cậy",
+            "partnerCount": "Hơn 200+ doanh nghiệp đã chuyển đổi số thành công cùng NEMARK.",
+            "t1Name": "Ông Lâm Vĩnh Thụy",
+            "t1Role": "CEO AuraVibe Medical Center",
+            "t1Industry": "Thẩm mỹ & Clinic",
+            "t1Quote": "\"Dịch vụ tuyệt vời, đội ngũ hỗ trợ nhiệt tình. Nemark đã giúp chúng tôi xây dựng hệ thống quản lý khách hàng chuyên nghiệp, nâng cao trải nghiệm dịch vụ tại AuraVibe một cách toàn diện.\"",
+            "t2Name": "Bà Mai Phương Thảo",
+            "t2Role": "Founder - GreenPioneer Solutions",
+            "t2Industry": "Doanh nghiệp nhỏ & Startup",
+            "t2Quote": "\"Quy trình làm việc agile của các bạn thực sự phù hợp với tốc độ phát triển của startup chúng tôi. Sản phẩm hoàn thiện đúng tiến độ với chất lượng code rất cao.\"",
+            "t3Name": "Ông Trần Hoàng Nam",
+            "t3Role": "Trưởng phòng TMĐT - UrbanDeli",
+            "t3Industry": "F&B / Bán lẻ",
+            "t3Quote": "\"Hệ thống đặt hàng đa kênh do Nemark triển khai vận hành mượt mà, chịu tải tốt trong giờ cao điểm. Doanh thu online của chúng tôi đã tăng trưởng 30% sau 3 tháng.\"",
+            "t4Name": "Bà Lê Khánh An",
+            "t4Role": "Brand Manager - VelvetNode Fashion",
+            "t4Industry": "Thời trang & Lifestyle",
+            "t4Quote": "\"Giao diện website mới thể hiện đúng tinh thần thương hiệu: tinh tế và sang trọng. Chúng tôi nhận được rất nhiều lời khen từ khách hàng VIP về trải nghiệm mua sắm.\""
+        },
+        "news": {
+            "sectionLabel": "TIN TỨC",
+            "readMore": "Đọc tiếp",
+            "viewMore": "XEM THÊM",
+            "loading": "Đang tải tin tức..."
+        }
+    },
+    "projectsPage": {
+        "hero": {
+            "title": "Dự Án Tiêu Biểu",
+            "subtitle": "Khám phá những dự án thành công mà Nemark đã triển khai cho các đối tác và khách hàng"
+        },
+        "breadcrumb": { "home": "Trang chủ", "projects": "Dự án" },
+        "stats": {
+            "s1Value": "200+", "s1Label": "Dự án hoàn thành",
+            "s2Value": "150+", "s2Label": "Khách hàng hài lòng",
+            "s3Value": "98%", "s3Label": "Tỷ lệ thành công",
+            "s4Value": "5+", "s4Label": "Năm kinh nghiệm"
+        },
+        "filter": { "all": "Tất cả" },
+        "labels": { "client": "Khách hàng:", "technologies": "Công nghệ:", "results": "Kết quả:" },
+        "p1": {
+            "title": "Website Thương mại điện tử FashionHub",
+            "client": "FashionHub Vietnam",
+            "description": "Thiết kế và phát triển nền tảng thương mại điện tử toàn diện với hơn 10,000 sản phẩm thời trang.",
+            "r1": "Tăng 250% doanh số trực tuyến", "r2": "Xử lý 5000+ đơn hàng/tháng", "r3": "Tốc độ tải trang < 2s"
+        },
+        "p2": {
+            "title": "Hệ thống quản lý bệnh viện MediCare",
+            "client": "Bệnh viện Đa khoa MediCare",
+            "description": "Phát triển hệ thống quản lý bệnh nhân, lịch hẹn và hồ sơ y tế điện tử.",
+            "r1": "Quản lý 50,000+ bệnh nhân", "r2": "Giảm 40% thời gian xử lý hồ sơ", "r3": "Tích hợp BHYT điện tử"
+        },
+        "p3": {
+            "title": "App Giao đồ ăn FastFood",
+            "client": "FastFood Delivery",
+            "description": "Ứng dụng di động đặt đồ ăn với tính năng theo dõi shipper real-time.",
+            "r1": "100,000+ lượt tải", "r2": "20,000+ đơn hàng/tháng", "r3": "Rating 4.8/5 trên App Store"
+        },
+        "p4": {
+            "title": "Website Giáo dục EduTech",
+            "client": "EduTech Academy",
+            "description": "Nền tảng học trực tuyến với video streaming và quản lý khóa học.",
+            "r1": "5,000+ học viên đăng ký", "r2": "200+ khóa học", "r3": "Tỷ lệ hoàn thành 85%"
+        },
+        "p5": {
+            "title": "CRM System cho Doanh nghiệp",
+            "client": "TechCorp Solutions",
+            "description": "Hệ thống CRM tùy chỉnh quản lý khách hàng và quy trình bán hàng.",
+            "r1": "Quản lý 10,000+ khách hàng", "r2": "Tăng 35% hiệu suất bán hàng", "r3": "Tự động hóa 70% quy trình"
+        },
+        "p6": {
+            "title": "Website Bất động sản RealEstate Pro",
+            "client": "RealEstate Pro",
+            "description": "Portal bất động sản với tìm kiếm thông minh và tour ảo 360°.",
+            "r1": "50,000+ tin đăng", "r2": "200,000+ lượt truy cập/tháng", "r3": "Tích hợp VR tour 360°"
+        }
+    },
+    "newsPage": {
+        "heroTitle": "Tin Tức & Bài Viết",
+        "heroSubtitle": "Cập nhật những xu hướng công nghệ mới nhất, kiến thức chuyên sâu về thiết kế web, SEO và giải pháp số",
+        "breadcrumbHome": "Trang chủ",
+        "breadcrumbNews": "Tin tức",
+        "breadcrumbArticle": "Bài viết",
+        "loading": "Đang tải tin tức...",
+        "loadingArticle": "Đang tải bài viết...",
+        "emptyTitle": "Chưa có bài viết nào",
+        "emptyDescription": "Vui lòng quay lại sau để xem các bài viết mới nhất",
+        "readMore": "Đọc thêm",
+        "minuteRead": "{minutes} phút đọc",
+        "ctaTitle": "NEMARK – GIẢI PHÁP SỐ ĐƠN GIẢN CHO TẤT CẢ MỌI NGƯỜI",
+        "ctaDescription": "Chúng tôi cung cấp giải pháp công nghệ trọn gói, giúp bạn bứt phá doanh thu. Tối ưu SEO, giao diện đẹp mắt và bàn giao toàn quyền quản trị.",
+        "ctaFeature1": "Thiết kế chuẩn UX/UI",
+        "ctaFeature2": "Tối ưu SEO On-page",
+        "ctaFeature3": "Kết nối tên miền riêng",
+        "ctaFeature4": "Hỗ trợ kỹ thuật 24/7",
+        "ctaButton": "Nhắn tin ngay để được tư vấn!"
+    }
+}

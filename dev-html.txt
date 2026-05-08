@@ -1,0 +1,40 @@
+
+    <div class="template-card__media-shell">
+        <a href="https://123website.com.vn/san-pham/mau-website-ban-hang/mau-website-ban-hang-cong-nghe-radios-home-2/" class="template-card__media" data-pan-media="">
+                            <img width="700" height="2260" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20700%202260'%3E%3C/svg%3E" class="template-card__image wp-post-image" alt="Mẫu website bán hàng công nghệ – radios home 2" data-pan-image="true" decoding="async" fetchpriority="high" data-lazy-srcset="https://123website.com.vn/wp-content/uploads/2023/08/mau-website-ban-hang-cong-nghe-radios-home-2.jpg 700w, https://123website.com.vn/wp-content/uploads/2023/08/mau-website-ban-hang-cong-nghe-radios-home-2-93x300.jpg 93w, https://123website.com.vn/wp-content/uploads/2023/08/mau-website-ban-hang-cong-nghe-radios-home-2-317x1024.jpg 317w, https://123website.com.vn/wp-content/uploads/2023/08/mau-website-ban-hang-cong-nghe-radios-home-2-476x1536.jpg 476w, https://123website.com.vn/wp-content/uploads/2023/08/mau-website-ban-hang-cong-nghe-radios-home-2-634x2048.jpg 634w, https://123website.com.vn/wp-content/uploads/2023/08/mau-website-ban-hang-cong-nghe-radios-home-2-310x1000.jpg 310w" data-lazy-sizes="(max-width: 700px) 100vw, 700px" data-lazy-src="https://123website.com.vn/wp-content/uploads/2023/08/mau-website-ban-hang-cong-nghe-radios-home-2.jpg"><noscript><img width="700" height="2260" src="https://123website.com.vn/wp-content/uploads/2023/08/mau-website-ban-hang-cong-nghe-radios-home-2.jpg" class="template-card__image wp-post-image" alt="Mẫu website bán hàng công nghệ &#8211; radios home 2" data-pan-image="true" decoding="async" fetchpriority="high" srcset="https://123website.com.vn/wp-content/uploads/2023/08/mau-website-ban-hang-cong-nghe-radios-home-2.jpg 700w, https://123website.com.vn/wp-content/uploads/2023/08/mau-website-ban-hang-cong-nghe-radios-home-2-93x300.jpg 93w, https://123website.com.vn/wp-content/uploads/2023/08/mau-website-ban-hang-cong-nghe-radios-home-2-317x1024.jpg 317w, https://123website.com.vn/wp-content/uploads/2023/08/mau-website-ban-hang-cong-nghe-radios-home-2-476x1536.jpg 476w, https://123website.com.vn/wp-content/uploads/2023/08/mau-website-ban-hang-cong-nghe-radios-home-2-634x2048.jpg 634w, https://123website.com.vn/wp-content/uploads/2023/08/mau-website-ban-hang-cong-nghe-radios-home-2-310x1000.jpg 310w" sizes="(max-width: 700px) 100vw, 700px" /></noscript>            
+            <div class="template-card__overlay">
+                <span class="template-card__overlay-chip">Xem chi tiết</span>
+            </div>
+
+            <div class="template-card__badges">
+                                    <span class="template-card__badge">Mẫu website bán hàng</span>
+                
+                            </div>
+        </a>
+
+        <button type="button" class="template-card__favorite" data-template-favorite-toggle="" aria-pressed="false" aria-label="Lưu mẫu Mẫu Website Bán Hàng Công Nghệ – Radios Home 2 vào danh sách quan tâm">
+            <span class="template-card__favorite-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M11.995 21.35a.75.75 0 0 1-.385-.106C9.204 19.83 2.25 15.447 2.25 9.375 2.25 6.043 4.918 3.75 8.025 3.75c1.714 0 3.141.81 3.97 2.043.829-1.233 2.256-2.043 3.97-2.043 3.107 0 5.785 2.293 5.785 5.625 0 6.072-6.954 10.455-9.36 11.869a.75.75 0 0 1-.395.106Z"></path>
+                </svg>
+            </span>
+            <span class="template-card__favorite-label">Quan tâm</span>
+        </button>
+    </div>
+
+    <div class="template-card__body">
+        <h3 class="template-card__title">
+            <a href="https://123website.com.vn/san-pham/mau-website-ban-hang/mau-website-ban-hang-cong-nghe-radios-home-2/">Mẫu Website Bán Hàng Công Nghệ – Radios Home 2</a>
+        </h3>
+
+        <div class="template-card__footer">
+            <a href="https://123website.com.vn/san-pham/mau-website-ban-hang/mau-website-ban-hang-cong-nghe-radios-home-2/" class="template-card__action template-card__action--primary">
+                Xem chi tiết
+            </a>
+
+            <a href="https://123websitedemo.com/?id=23837" target="_blank" rel="noopener noreferrer" class="template-card__action template-card__action--external">
+                <span>Xem Mẫu</span>
+                <span class="template-card__action-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" class="h-4 w-4"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5H19.5V10.5"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 13.5 19.5 4.5"></path><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5V17.25C19.5 18.4926 18.4926 19.5 17.25 19.5H6.75C5.50736 19.5 4.5 18.4926 4.5 17.25V6.75C4.5 5.50736 5.50736 4.5 6.75 4.5H10.5"></path></svg></span>
+            </a>
+        </div>
+    </div>
