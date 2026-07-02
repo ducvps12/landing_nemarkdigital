@@ -3,13 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 4001",
+    "dev": "next dev -p 4001 --webpack",
     "build": "next build",
     "start": "next start -p 4001",
     "lint": "eslint"
   },
   "dependencies": {
-    "@parcel/watcher-win32-x64": "^2.5.6",
     "@supabase/ssr": "^0.8.0",
     "@supabase/supabase-js": "^2.89.0",
     "@types/nodemailer": "^7.0.11",
