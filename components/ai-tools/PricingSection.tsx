@@ -1,6 +1,7 @@
 'use client'
 
 import { useTranslations } from 'next-intl'
+import { Bot, Sparkles, Film } from 'lucide-react'
 
 interface PricingSectionProps {
     onOpenContactModal: () => void
@@ -11,17 +12,17 @@ export default function PricingSection({ onOpenContactModal }: PricingSectionPro
 
     const plans = [
         {
-            nameKey: 'chatgptName', icon: '🤖', tagKey: 'chatgptTag', descKey: 'chatgptDesc',
+            nameKey: 'chatgptName', icon: Bot, tagKey: 'chatgptTag', descKey: 'chatgptDesc',
             featureKeys: ['chatgptF1', 'chatgptF2', 'chatgptF3', 'chatgptF4', 'chatgptF5', 'chatgptF6'],
             gradient: 'from-emerald-500 to-teal-600', popular: false,
         },
         {
-            nameKey: 'geminiName', icon: '✨', tagKey: 'geminiTag', descKey: 'geminiDesc',
+            nameKey: 'geminiName', icon: Sparkles, tagKey: 'geminiTag', descKey: 'geminiDesc',
             featureKeys: ['geminiF1', 'geminiF2', 'geminiF3', 'geminiF4', 'geminiF5', 'geminiF6'],
             gradient: 'from-blue-500 to-indigo-600', popular: true,
         },
         {
-            nameKey: 'capcutName', icon: '🎬', tagKey: 'capcutTag', descKey: 'capcutDesc',
+            nameKey: 'capcutName', icon: Film, tagKey: 'capcutTag', descKey: 'capcutDesc',
             featureKeys: ['capcutF1', 'capcutF2', 'capcutF3', 'capcutF4', 'capcutF5', 'capcutF6'],
             gradient: 'from-purple-500 to-pink-600', popular: false,
         },
@@ -37,55 +38,60 @@ export default function PricingSection({ onOpenContactModal }: PricingSectionPro
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {plans.map((plan, index) => (
-                        <div
-                            key={index}
-                            className={`relative bg-white rounded-3xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl ${plan.popular ? 'shadow-xl ring-2 ring-blue-500/20' : 'shadow-lg border border-gray-100'}`}
-                            data-aos="fade-up"
-                            data-aos-delay={index * 100}
-                        >
-                            {plan.popular && (
-                                <div className="absolute top-0 right-0">
-                                    <div className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-xs font-bold px-4 py-1.5 rounded-bl-xl">
-                                        {t('popular')}
+                    {plans.map((plan, index) => {
+                        const Icon = plan.icon
+                        return (
+                            <div
+                                key={index}
+                                className={`relative bg-white rounded-3xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl ${plan.popular ? 'shadow-xl ring-2 ring-blue-500/20' : 'shadow-lg border border-gray-100'}`}
+                                data-aos="fade-up"
+                                data-aos-delay={index * 100}
+                            >
+                                {plan.popular && (
+                                    <div className="absolute top-0 right-0">
+                                        <div className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-xs font-bold px-4 py-1.5 rounded-bl-xl">
+                                            {t('popular')}
+                                        </div>
                                     </div>
-                                </div>
-                            )}
+                                )}
 
-                            <div className={`bg-gradient-to-br ${plan.gradient} p-8 text-white`}>
-                                <div className="flex items-center gap-3 mb-4">
-                                    <span className="text-4xl">{plan.icon}</span>
-                                    <div>
-                                        <h3 className="text-2xl font-bold">{t(plan.nameKey)}</h3>
-                                        <p className="text-white/70 text-sm">{t(plan.tagKey)}</p>
+                                <div className={`bg-gradient-to-br ${plan.gradient} p-8 text-white`}>
+                                    <div className="flex items-center gap-4 mb-4">
+                                        <div className="w-12 h-12 rounded-2xl bg-white/15 flex items-center justify-center border border-white/20 backdrop-blur-sm shadow-inner">
+                                            <Icon className="text-white" size={24} strokeWidth={2.2} />
+                                        </div>
+                                        <div>
+                                            <h3 className="text-2xl font-bold">{t(plan.nameKey)}</h3>
+                                            <p className="text-white/70 text-sm">{t(plan.tagKey)}</p>
+                                        </div>
                                     </div>
+                                    <div className="flex items-baseline gap-1">
+                                        <span className="text-3xl font-bold">{t('contactPrice')}</span>
+                                    </div>
+                                    <p className="text-white/80 text-sm mt-2">{t(plan.descKey)}</p>
                                 </div>
-                                <div className="flex items-baseline gap-1">
-                                    <span className="text-3xl font-bold">{t('contactPrice')}</span>
-                                </div>
-                                <p className="text-white/80 text-sm mt-2">{t(plan.descKey)}</p>
-                            </div>
 
-                            <div className="p-8">
-                                <ul className="space-y-4">
-                                    {plan.featureKeys.map((fKey, fIndex) => (
-                                        <li key={fIndex} className="flex items-start gap-3">
-                                            <span className="material-icons-outlined text-emerald-500 text-lg mt-0.5">check_circle</span>
-                                            <span className="text-gray-600 text-sm">{t(fKey)}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                                <button
-                                    onClick={onOpenContactModal}
-                                    className={`w-full mt-8 py-3.5 rounded-xl font-bold transition-all duration-300 hover:scale-[1.02] ${plan.popular
-                                        ? 'bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-lg shadow-blue-500/25'
-                                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
-                                >
-                                    {t('cta')}
-                                </button>
+                                <div className="p-8">
+                                    <ul className="space-y-4">
+                                        {plan.featureKeys.map((fKey, fIndex) => (
+                                            <li key={fIndex} className="flex items-start gap-3">
+                                                <span className="material-icons-outlined text-emerald-500 text-lg mt-0.5">check_circle</span>
+                                                <span className="text-gray-600 text-sm">{t(fKey)}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                    <button
+                                        onClick={onOpenContactModal}
+                                        className={`w-full mt-8 py-3.5 rounded-xl font-bold transition-all duration-300 hover:scale-[1.02] ${plan.popular
+                                            ? 'bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-lg shadow-blue-500/25'
+                                            : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
+                                    >
+                                        {t('cta')}
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        )
+                    })}
                 </div>
 
                 <div className="mt-12 text-center" data-aos="fade-up">

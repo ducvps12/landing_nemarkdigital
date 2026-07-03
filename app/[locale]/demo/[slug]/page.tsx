@@ -1,9 +1,8 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { useParams, useRouter } from 'next/navigation'
-import Link from 'next/link'
-import { Monitor, Smartphone, Tablet, X, PhoneCall, ArrowLeft } from 'lucide-react'
+import { Monitor, Smartphone, Tablet, X, PhoneCall, ArrowLeft, ExternalLink, AlertTriangle } from 'lucide-react'
 import { websiteDatabase, defaultTemplate } from '@/lib/websiteData'
 
 export default function DemoPreviewPage() {
@@ -17,10 +16,80 @@ export default function DemoPreviewPage() {
 
     const [device, setDevice] = useState<'desktop' | 'tablet' | 'mobile'>('desktop')
     const [isLoading, setIsLoading] = useState(true)
+    const [iframeError, setIframeError] = useState(false)
+    const iframeRef = useRef<HTMLIFrameElement>(null)
 
     // Wait until mounted to avoid hydration mismatch
     const [mounted, setMounted] = useState(false)
     useEffect(() => setMounted(true), [])
+
+    // Pre-check if URL allows iframe embedding by fetching headers
+    useEffect(() => {
+        if (!mounted || !product.demoUrl) return
+
+        const controller = new AbortController()
+
+        // Try to check iframe-ability via a HEAD request through our proxy API
+        fetch(`/api/check-iframe?url=${encodeURIComponent(product.demoUrl)}`, {
+            signal: controller.signal,
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.blocked) {
+                    setIframeError(true)
+                    setIsLoading(false)
+                }
+            })
+            .catch(() => {
+                // If check fails, let the iframe try to load normally
+            })
+
+        return () => controller.abort()
+    }, [mounted, product.demoUrl])
+
+    // Fallback timeout - if iframe hasn't loaded after 10s, show error
+    useEffect(() => {
+        if (!mounted) return
+
+        const timeout = setTimeout(() => {
+            if (isLoading) {
+                setIframeError(true)
+                setIsLoading(false)
+            }
+        }, 10000)
+
+        return () => clearTimeout(timeout)
+    }, [mounted, isLoading])
+
+    const handleIframeLoad = useCallback(() => {
+        // Give a short delay to let the iframe settle
+        setTimeout(() => {
+            const iframe = iframeRef.current
+            if (!iframe) return
+
+            try {
+                // Same-origin check
+                const doc = iframe.contentDocument || iframe.contentWindow?.document
+                if (doc && doc.body) {
+                    const bodyContent = doc.body.innerHTML.trim()
+                    if (bodyContent.length > 0) {
+                        setIsLoading(false)
+                        setIframeError(false)
+                    } else {
+                        setIsLoading(false)
+                        setIframeError(true)
+                    }
+                    return
+                }
+            } catch {
+                // Cross-origin: can't access content
+                // onLoad fires regardless of X-Frame-Options blocking.
+                // We rely on the pre-check API or timeout fallback.
+                // For now, just hide loader - if pre-check already set error, that takes priority.
+                setIsLoading(false)
+            }
+        }, 1000)
+    }, [])
 
     const getIframeContainerClasses = () => {
         switch (device) {
@@ -145,7 +214,7 @@ export default function DemoPreviewPage() {
             <div className="flex-1 overflow-auto flex flex-col items-center bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] bg-gray-100 relative custom-scrollbar z-10 w-full">
                 
                 {/* Loader showing while iframe is loading */}
-                {isLoading && (
+                {isLoading && !iframeError && (
                     <div className="absolute inset-x-0 top-[20%] flex flex-col items-center justify-center z-20 transition-opacity duration-500 pointer-events-none">
                         <div className="w-12 h-12 relative flex items-center justify-center">
                             <div className="absolute inset-0 border-4 border-gray-200 rounded-full"></div>
@@ -158,15 +227,55 @@ export default function DemoPreviewPage() {
                     </div>
                 )}
 
+                {/* Error Fallback - when iframe is blocked */}
+                {iframeError && (
+                    <div className="absolute inset-0 flex items-center justify-center z-30 bg-gray-50/80 backdrop-blur-sm">
+                        <div className="bg-white rounded-2xl shadow-xl p-8 max-w-md mx-4 text-center border border-gray-100">
+                            <div className="w-16 h-16 bg-amber-50 rounded-full flex items-center justify-center mx-auto mb-5">
+                                <AlertTriangle className="w-8 h-8 text-amber-500" />
+                            </div>
+                            <h3 className="text-lg font-bold text-gray-900 mb-2">
+                                Không thể xem trước trong khung
+                            </h3>
+                            <p className="text-gray-500 text-sm mb-6 leading-relaxed">
+                                Trang demo này không hỗ trợ xem trong iframe. Vui lòng mở trực tiếp tại tab mới để trải nghiệm đầy đủ.
+                            </p>
+                            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                                <a
+                                    href={product.demoUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-xl text-sm font-semibold transition-colors shadow-sm shadow-primary/20"
+                                >
+                                    <ExternalLink className="w-4 h-4" />
+                                    Mở Demo tại tab mới
+                                </a>
+                                <button
+                                    onClick={() => router.push(`/${locale}/mau-website/${slug}`)}
+                                    className="inline-flex items-center justify-center gap-2 bg-gray-100 hover:bg-gray-200 text-gray-700 px-6 py-3 rounded-xl text-sm font-semibold transition-colors"
+                                >
+                                    <ArrowLeft className="w-4 h-4" />
+                                    Quay lại
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                )}
+
                 <div 
                     className={`transition-all duration-700 ease-in-[cubic-bezier(0.4,0,0.2,1)] ${getIframeContainerClasses()} isolate`}
                 >
-                    <iframe 
-                        src={product.demoUrl}
-                        className={`w-full h-full border-none bg-white transition-opacity duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'} z-10 relative`}
-                        onLoad={() => setIsLoading(false)}
-                        sandbox="allow-scripts allow-same-origin allow-forms allow-popups"
-                    />
+                    {!iframeError && (
+                        <iframe 
+                            ref={iframeRef}
+                            src={product.demoUrl}
+                            className={`w-full h-full border-none bg-white transition-opacity duration-500 ${isLoading ? 'opacity-0' : 'opacity-100'} z-10 relative`}
+                            onLoad={handleIframeLoad}
+                            onError={() => { setIframeError(true); setIsLoading(false); }}
+                            referrerPolicy="no-referrer-when-downgrade"
+                            allow="autoplay; encrypted-media"
+                        />
+                    )}
                     
                     {/* Simulated Camera notch for mobile */}
                     {device === 'mobile' && (
@@ -199,7 +308,7 @@ export default function DemoPreviewPage() {
                     )}
                 </div>
                 
-                {device !== 'desktop' && <div className="h-16 shrink-0 w-full" />} {/* Bottom spacer */}
+                {device !== 'desktop' && <div className="h-16 shrink-0 w-full" />}
             </div>
             
             <style jsx global>{`

@@ -8,27 +8,26 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/effect-coverflow'
-import { useTranslations } from 'next-intl'
-import { websiteTemplates } from '@/lib/websiteData'
+import { useTranslations, useLocale } from 'next-intl'
+import { websiteTemplates, getTranslatedTemplate } from '@/lib/websiteData'
 
 export default function Project() {
     const t = useTranslations('projectSection')
+    const locale = useLocale()
     const [activeCategory, setActiveCategory] = useState(t('categories.all'))
 
     const categoryKeys = ['all', 'selling', 'interior', 'realEstate', 'intro', 'education'] as const
     const categories = categoryKeys.map(key => t(`categories.${key}`))
 
-
-    // Map shared data to projects - use title directly from websiteData (single source of truth)
     const projects = websiteTemplates.map((template) => {
+        const transTemplate = getTranslatedTemplate(template, locale)
         return {
-            category: t(`categories.${template.category}`),
-            title: template.title,
-            image: template.image,
-            slug: template.slug,
+            category: t(`categories.${transTemplate.category}`),
+            title: transTemplate.title,
+            image: transTemplate.image,
+            slug: transTemplate.slug,
         }
     })
-
 
     const filteredProjects = activeCategory === t('categories.all')
         ? projects
@@ -37,7 +36,6 @@ export default function Project() {
     return (
         <section id="projects" className="py-20 bg-slate-50 mx-auto">
             <div className="w-[80%] mx-auto">
-                {/* Header */}
                 <div className="text-center mb-12" data-aos="fade-up">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
                         {t('title')} <span className="text-primary">{t('titleHighlight')}</span>
@@ -46,7 +44,6 @@ export default function Project() {
                         {t('description')}
                     </p>
 
-                    {/* Category Filters */}
                     <div className="flex flex-wrap justify-center gap-3 mb-8">
                         {categories.map((category) => (
                             <button
@@ -63,7 +60,6 @@ export default function Project() {
                     </div>
                 </div>
 
-                {/* Swiper Carousel */}
                 <div className="relative" data-aos="fade-up">
                     <Swiper
                         modules={[Navigation, Pagination, EffectCoverflow]}
@@ -87,7 +83,6 @@ export default function Project() {
                             <SwiperSlide key={index}>
                                 <Link href={`/mau-website/${project.slug}`}>
                                     <div className="group relative bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer transform hover:-translate-y-2" style={{ perspective: '1000px' }}>
-                                        {/* Image Container with Scroll Effect */}
                                         <div className="relative aspect-[3/4] overflow-hidden">
                                             <div className="image-scroll-container">
                                                 <img
@@ -97,7 +92,6 @@ export default function Project() {
                                                 />
                                             </div>
 
-                                            {/* Title at bottom - always visible */}
                                             <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-slate-900 to-transparent">
                                                 <h4 className="text-white text-sm font-bold text-center">
                                                     {project.title}
@@ -138,12 +132,10 @@ export default function Project() {
                     transform: scale(0.7);
                 }
                 
-                
                 .project-swiper .swiper-pagination-bullet-active {
                     background: #0EA5E9;
                 }
                 
-                /* Image scroll animation */
                 .image-scroll-container {
                     position: relative;
                     height: 100%;
@@ -159,7 +151,7 @@ export default function Project() {
                 }
                 
                 .group:hover .image-scroll-container img {
-                    transform: translateY(calc(-100% + 100%));
+                    transform: translateY(calc(-100% + 466px));
                 }
             `}</style>
         </section>

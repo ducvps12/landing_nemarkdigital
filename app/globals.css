@@ -34,7 +34,7 @@ html {
 
 body {
   background: #F8FAFC !important;
-  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: var(--font-body), 'Be Vietnam Pro', system-ui, sans-serif;
   min-height: 100vh;
 }
 
@@ -58,7 +58,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-heading), 'Montserrat', system-ui, sans-serif;
 }
 
 /* Smooth scroll */

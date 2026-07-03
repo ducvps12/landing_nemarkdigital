@@ -8,15 +8,17 @@ import { useState, useEffect } from 'react'
 import { useParams } from 'next/navigation'
 import { ChevronLeft, ChevronRight, ChevronDown, Maximize2, Minimize2, ZoomIn, Star, Heart, Check } from 'lucide-react'
 import ContactModal from '@/components/common/modal/ContactModal'
-import { websiteDatabase, defaultTemplate, websiteTemplates } from '@/lib/websiteData'
+import { websiteDatabase, defaultTemplate, websiteTemplates, getTranslatedTemplate } from '@/lib/websiteData'
 
 export default function WebsiteDetailPage() {
     const params = useParams()
     const slug = params.slug as string
+    const locale = params.locale as string
 
     // Get product data or use default
     const dbEntry = websiteDatabase[slug]
-    const product = dbEntry || { ...defaultTemplate, slug, title: slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') }
+    const rawProduct = dbEntry || { ...defaultTemplate, slug, title: slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') }
+    const product = getTranslatedTemplate(rawProduct, locale)
 
     const [activeImage, setActiveImage] = useState(0)
     const [isContactModalOpen, setIsContactModalOpen] = useState(false)
@@ -25,7 +27,7 @@ export default function WebsiteDetailPage() {
     const relatedWebsites = websiteTemplates
         .filter(t => t.slug !== slug)
         .slice(0, 4)
-
+        .map(t => getTranslatedTemplate(t, locale))
 
     return (
         <div className="min-h-screen bg-white">
@@ -35,9 +37,13 @@ export default function WebsiteDetailPage() {
                 <div className="max-w-7xl mx-auto px-4 lg:px-8">
                     {/* Breadcrumb */}
                     <nav className="flex items-center gap-2 text-sm text-gray-600 mb-8" data-aos="fade-up">
-                        <Link href="/" className="hover:text-primary transition-colors">Trang chủ</Link>
+                        <Link href="/" className="hover:text-primary transition-colors">
+                            {locale === 'en' ? 'Home' : 'Trang chủ'}
+                        </Link>
                         <span>›</span>
-                        <Link href="/mau-website" className="hover:text-primary transition-colors">Mẫu website</Link>
+                        <Link href="/mau-website" className="hover:text-primary transition-colors">
+                            {locale === 'en' ? 'Website templates' : 'Mẫu website'}
+                        </Link>
                         <span>›</span>
                         <span className="text-primary font-medium">{product.title}</span>
                     </nav>
@@ -60,7 +66,7 @@ export default function WebsiteDetailPage() {
                                 {isExpanded && (
                                     <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/60 text-white text-xs px-4 py-2 rounded-full flex items-center gap-2 animate-bounce">
                                         <ChevronDown className="w-4 h-4" />
-                                        Cuộn để xem đầy đủ
+                                        {locale === 'en' ? 'Scroll to view full' : 'Cuộn để xem đầy đủ'}
                                     </div>
                                 )}
 
@@ -69,7 +75,11 @@ export default function WebsiteDetailPage() {
                                     className="absolute top-4 right-4 z-10 bg-white/90 hover:bg-white text-gray-800 px-3 py-2 rounded-lg shadow-lg flex items-center gap-2"
                                 >
                                     {isExpanded ? <Minimize2 className="w-4 h-4" /> : <Maximize2 className="w-4 h-4" />}
-                                    <span className="text-sm font-medium">{isExpanded ? 'Thu gọn' : 'Mở rộng'}</span>
+                                    <span className="text-sm font-medium">
+                                        {isExpanded 
+                                            ? (locale === 'en' ? 'Collapse' : 'Thu gọn') 
+                                            : (locale === 'en' ? 'Expand' : 'Mở rộng')}
+                                    </span>
                                 </button>
 
                                 {product.mainImages.length > 1 && (
@@ -129,23 +139,33 @@ export default function WebsiteDetailPage() {
                                         </div>
                                         <div className="flex items-center gap-1 text-gray-400">
                                             <Heart className="w-5 h-5" />
-                                            <span>{product.likes} lượt thích</span>
+                                            <span>
+                                                {product.likes} {locale === 'en' ? 'likes' : 'lượt thích'}
+                                            </span>
                                         </div>
                                     </div>
                                     <div className="flex items-start">
-                                        <span className="w-28 text-gray-600 shrink-0">Danh mục:</span>
+                                        <span className="w-28 text-gray-600 shrink-0">
+                                            {locale === 'en' ? 'Category:' : 'Danh mục:'}
+                                        </span>
                                         <span className="text-primary font-medium">{product.categoryLabel}</span>
                                     </div>
                                     <div className="flex items-center">
-                                        <span className="w-28 text-gray-600">Giá:</span>
+                                        <span className="w-28 text-gray-600">
+                                            {locale === 'en' ? 'Price:' : 'Giá:'}
+                                        </span>
                                         <span className="text-primary font-semibold text-xl">{product.price}</span>
                                     </div>
                                     <div className="flex items-center">
-                                        <span className="w-28 text-gray-600">Thời gian:</span>
+                                        <span className="w-28 text-gray-600">
+                                            {locale === 'en' ? 'Timeline:' : 'Thời gian:'}
+                                        </span>
                                         <span className="text-gray-900">{product.time}</span>
                                     </div>
                                     <div className="flex items-start">
-                                        <span className="w-28 text-gray-600 shrink-0">Mô tả:</span>
+                                        <span className="w-28 text-gray-600 shrink-0">
+                                            {locale === 'en' ? 'Description:' : 'Mô tả:'}
+                                        </span>
                                         <span className="text-gray-700">{product.description}</span>
                                     </div>
                                 </div>
@@ -153,17 +173,17 @@ export default function WebsiteDetailPage() {
                                 {/* CTA Buttons */}
                                 <div className="flex gap-4 mb-6">
                                     <Link
-                                        href={`/${params.locale as string}/demo/${product.slug}`}
+                                        href={`/${locale}/demo/${product.slug}`}
                                         target="_blank"
                                         className="flex-1 px-6 py-3 bg-red-500 hover:bg-red-600 text-white font-semibold rounded-lg transition-colors text-center flex items-center justify-center"
                                     >
-                                        XEM DEMO
+                                        {locale === 'en' ? 'LIVE DEMO' : 'XEM DEMO'}
                                     </Link>
                                     <button
                                         onClick={() => setIsContactModalOpen(true)}
                                         className="flex-1 px-6 py-3 border-2 border-gray-300 hover:border-primary text-gray-700 hover:text-primary font-semibold rounded-lg transition-colors"
                                     >
-                                        Đặt mẫu
+                                        {locale === 'en' ? 'Order template' : 'Đặt mẫu'}
                                     </button>
                                 </div>
 
@@ -180,7 +200,9 @@ export default function WebsiteDetailPage() {
 
                             {/* Details */}
                             <div className="mt-8">
-                                <h3 className="text-xl font-bold text-gray-900 mb-4">Thông tin chi tiết:</h3>
+                                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                                    {locale === 'en' ? 'Technical details:' : 'Thông tin chi tiết:'}
+                                </h3>
                                 <div className="bg-gray-50 rounded-xl p-6 space-y-3">
                                     {product.details.map((detail: { label: string; value: string }, index: number) => (
                                         <div key={index} className="flex items-start">
@@ -197,7 +219,7 @@ export default function WebsiteDetailPage() {
                     {relatedWebsites.length > 0 && (
                         <section data-aos="fade-up">
                             <h2 className="text-2xl font-bold text-primary mb-8 uppercase">
-                                Website tương tự
+                                {locale === 'en' ? 'Similar templates' : 'Website tương tự'}
                             </h2>
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                                 {relatedWebsites.map((website) => (

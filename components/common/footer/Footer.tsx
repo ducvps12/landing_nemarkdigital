@@ -49,7 +49,7 @@ export default function Footer() {
                             </div>
                         </div>
 
-                        {/* Column 2: Thông tin + Hỗ trợ (merged) */}
+                        {/* Column 2: Information & Support */}
                         <div>
                             {/* Thông tin */}
                             <h4 className="text-white font-bold text-lg mb-4 uppercase tracking-wider border-b border-slate-700 pb-2 hover:text-primary transition-colors cursor-pointer">

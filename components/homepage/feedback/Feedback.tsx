@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from 'react'
 import Image from 'next/image'
+import { useTranslations } from 'next-intl'
 
 interface Testimonial {
     name: string
@@ -13,42 +14,43 @@ interface Testimonial {
 }
 
 export default function Feedback() {
+    const t = useTranslations('feedback')
     const [activeIndex, setActiveIndex] = useState(0)
     const [isAnimating, setIsAnimating] = useState(false)
     const isAnimatingRef = useRef(false)
 
     const testimonials: Testimonial[] = [
         {
-            name: 'Nguyễn Văn An',
-            position: 'CEO',
-            company: 'Tech Startup ABC',
+            name: t('testimonials.t1.name'),
+            position: t('testimonials.t1.position'),
+            company: t('testimonials.t1.company'),
             avatar: 'https://ui-avatars.com/api/?name=Nguyen+Van+An&background=0ea5e9&color=fff&size=256',
             rating: 5,
-            content: 'Nemark đã giúp chúng tôi xây dựng hệ thống quản lý nội bộ hoàn chỉnh. Đội ngũ chuyên nghiệp, tận tâm và luôn sẵn sàng hỗ trợ 24/7. Dự án được bàn giao đúng tiến độ với chất lượng vượt mong đợi.',
+            content: t('testimonials.t1.content'),
         },
         {
-            name: 'Trần Thị Bình',
-            position: 'Giám đốc Marketing',
-            company: 'Fashion Brand XYZ',
+            name: t('testimonials.t2.name'),
+            position: t('testimonials.t2.position'),
+            company: t('testimonials.t2.company'),
             avatar: 'https://ui-avatars.com/api/?name=Tran+Thi+Binh&background=7c3aed&color=fff&size=256',
             rating: 5,
-            content: 'Website thương mại điện tử do Nemark thiết kế đã giúp doanh thu của chúng tôi tăng 300% trong 6 tháng. Giao diện đẹp, tốc độ nhanh và tối ưu SEO rất tốt. Đặc biệt ấn tượng với dịch vụ hậu mãi.',
+            content: t('testimonials.t2.content'),
         },
         {
-            name: 'Lê Hoàng Nam',
-            position: 'Founder',
-            company: 'EdTech Solutions',
+            name: t('testimonials.t3.name'),
+            position: t('testimonials.t3.position'),
+            company: t('testimonials.t3.company'),
             avatar: 'https://ui-avatars.com/api/?name=Le+Hoang+Nam&background=f59e0b&color=fff&size=256',
             rating: 5,
-            content: 'Chúng tôi đã hợp tác với nhiều đối tác nhưng Nemark là người hiểu rõ nhất về nhu cầu startup. Họ không chỉ code mà còn tư vấn chiến lược sản phẩm rất sát sao. Highly recommended!',
+            content: t('testimonials.t3.content'),
         },
         {
-            name: 'Phạm Minh Quân',
-            position: 'Trưởng phòng IT',
-            company: 'Manufacturing Corp',
+            name: t('testimonials.t4.name'),
+            position: t('testimonials.t4.position'),
+            company: t('testimonials.t4.company'),
             avatar: 'https://ui-avatars.com/api/?name=Pham+Minh+Quan&background=10b981&color=fff&size=256',
             rating: 5,
-            content: 'Hệ thống ERP do Nemark triển khai đã số hóa hoàn toàn quy trình sản xuất của chúng tôi. Giảm 60% thời gian xử lý đơn hàng và tăng hiệu quả quản lý. Đầu tư rất xứng đáng!',
+            content: t('testimonials.t4.content'),
         },
     ]
 
@@ -113,16 +115,19 @@ export default function Feedback() {
                                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                             <span className="text-sm font-bold text-slate-600 uppercase tracking-wider">
-                                Khách hàng nói gì
+                                {t('badge')}
                             </span>
                         </span>
                     </div>
                     <h3 className="text-4xl lg:text-5xl font-display font-bold text-slate-900 mb-6">
-                        Phản hồi từ đối tác
+                        {t('title')}
                     </h3>
-                    <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                        Hơn <span className="font-bold text-slate-900">16,000+</span> khách hàng đã tin tưởng và hài lòng với dịch vụ của chúng tôi
-                    </p>
+                    <p 
+                        className="text-lg text-slate-600 max-w-2xl mx-auto"
+                        dangerouslySetInnerHTML={{
+                            __html: t.raw('description')
+                        }}
+                    />
                 </div>
 
                 {/* Two Column Layout: Testimonial + Image */}

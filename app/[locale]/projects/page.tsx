@@ -1,24 +1,39 @@
 'use client'
 
 import { useState } from 'react'
-import { useTranslations } from 'next-intl'
+import { useTranslations, useLocale } from 'next-intl'
 import Header from '@/components/common/header/Header'
 import Footer from '@/components/common/footer/Footer'
 import ContactModal from '@/components/common/modal/ContactModal'
 import Link from 'next/link'
-import { websiteTemplates, listingCategories } from '@/lib/websiteData'
+import { websiteTemplates, listingCategories, getTranslatedTemplates } from '@/lib/websiteData'
 import { ExternalLink } from 'lucide-react'
 
 export default function ProjectsPage() {
     const [isContactModalOpen, setIsContactModalOpen] = useState(false)
     const [selectedCategory, setSelectedCategory] = useState('all')
     const t = useTranslations('projectsPage')
+    const tSection = useTranslations('projectSection')
+    const locale = useLocale()
 
-    const filteredProjects = selectedCategory === 'all'
+    const rawFilteredProjects = selectedCategory === 'all'
         ? websiteTemplates
         : websiteTemplates.filter(t => t.categoryId === selectedCategory)
 
+    const filteredProjects = getTranslatedTemplates(rawFilteredProjects, locale)
+
     const statsColors = ['blue', 'green', 'purple', 'orange']
+
+    const getCategoryName = (id: string, defaultName: string) => {
+        switch (id) {
+            case 'all': return tSection('categories.all');
+            case 'ban-hang': return tSection('categories.selling');
+            case 'dich-vu': return tSection('categories.service');
+            case 'thong-tin': return tSection('categories.intro');
+            case 'landing-page': return 'Landing Page';
+            default: return defaultName;
+        }
+    }
 
     return (
         <div className="min-h-screen bg-white text-black">
@@ -63,7 +78,7 @@ export default function ProjectsPage() {
                                 onClick={() => setSelectedCategory(cat.id)}
                                 className={`px-5 py-2.5 rounded-full font-medium transition-all flex items-center gap-2 ${selectedCategory === cat.id ? 'bg-primary text-white shadow-lg' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'}`}
                             >
-                                <span>{cat.name}</span>
+                                <span>{getCategoryName(cat.id, cat.name)}</span>
                                 {cat.count > 0 && (
                                     <span className={`text-xs px-2 py-0.5 rounded-full ${selectedCategory === cat.id ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-500'}`}>
                                         {cat.count}
@@ -101,13 +116,15 @@ export default function ProjectsPage() {
                                         </h3>
                                     </Link>
                                     <p className="text-sm text-slate-600 mb-4">
-                                        <span className="font-semibold">Thời gian triển khai:</span> {project.time}
+                                        <span className="font-semibold">{locale === 'en' ? 'Implementation time:' : 'Thời gian triển khai:'}</span> {project.time}
                                     </p>
                                     <p className="text-slate-600 text-sm leading-relaxed mb-4 line-clamp-2 min-h-[40px]">{project.description}</p>
                                     
                                     {project.tags && project.tags.length > 0 && (
                                         <div className="mb-4">
-                                            <div className="text-xs font-semibold text-slate-700 mb-2">Đặc điểm / Tính năng:</div>
+                                            <div className="text-xs font-semibold text-slate-700 mb-2">
+                                                {locale === 'en' ? 'Key Features / Tags:' : 'Đặc điểm / Tính năng:'}
+                                            </div>
                                             <div className="flex flex-wrap gap-2">
                                                 {project.tags.slice(0, 4).map((tech, i) => (
                                                     <span key={i} className="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">{tech}</span>
@@ -118,7 +135,9 @@ export default function ProjectsPage() {
                                     )}
 
                                     <div className="border-t border-slate-200 pt-4 mt-auto mb-4">
-                                        <div className="text-xs font-semibold text-slate-700 mb-2">Thông tin đi kèm:</div>
+                                        <div className="text-xs font-semibold text-slate-700 mb-2">
+                                            {locale === 'en' ? 'Included features:' : 'Thông tin đi kèm:'}
+                                        </div>
                                         <ul className="space-y-1">
                                             {project.features.slice(0, 3).map((f, idx) => (
                                                 <li key={idx} className="flex items-start gap-2 text-sm text-slate-600">
@@ -134,7 +153,7 @@ export default function ProjectsPage() {
                                             href={`/mau-website/${project.slug}`}
                                             className="flex items-center justify-center py-2 px-3 rounded-xl text-sm font-semibold border-2 border-primary text-primary hover:bg-primary hover:text-white transition-colors"
                                         >
-                                            Chi tiết
+                                            {locale === 'en' ? 'Details' : 'Chi tiết'}
                                         </Link>
                                         <Link 
                                             href={`/demo/${project.slug}`}
@@ -142,7 +161,7 @@ export default function ProjectsPage() {
                                             rel="noopener noreferrer"
                                             className="flex items-center justify-center gap-1.5 py-2 px-3 rounded-xl text-sm font-semibold bg-slate-900 text-white hover:bg-slate-800 transition-colors"
                                         >
-                                            <span>Xem Mẫu</span>
+                                            <span>{locale === 'en' ? 'Live Demo' : 'Xem Mẫu'}</span>
                                             <ExternalLink className="w-3.5 h-3.5" />
                                         </Link>
                                     </div>
@@ -152,7 +171,7 @@ export default function ProjectsPage() {
                     </div>
                     {filteredProjects.length === 0 && (
                         <div className="text-center py-12 text-slate-500">
-                            Không có dự án nào trong danh mục này.
+                            {locale === 'en' ? 'No projects in this category.' : 'Không có dự án nào trong danh mục này.'}
                         </div>
                     )}
                 </div>

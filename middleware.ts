@@ -11,9 +11,9 @@ const intlMiddleware = createMiddleware(routing);
 export async function middleware(request: NextRequest) {
     const pathname = request.nextUrl.pathname;
 
-    // Block access to /admin - return 403 Forbidden
+    // Redirect /admin to homepage
     if (pathname.startsWith('/admin') && !pathname.startsWith('/adminduc')) {
-        return new NextResponse('⛔ Truy cập bị chặn - Access Denied', { status: 403 });
+        return NextResponse.redirect(new URL('/', request.url));
     }
 
     // Skip i18n for adminduc routes - handle auth separately
