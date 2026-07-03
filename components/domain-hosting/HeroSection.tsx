@@ -9,7 +9,7 @@ export default function HeroSection({ onOpenContactModal }: HeroSectionProps) {
     const t = useTranslations('domainHostingPage.hero')
 
     return (
-        <section data-hero className="relative min-h-[80vh] lg:min-h-[85vh] flex items-center overflow-hidden">
+        <section data-hero className="relative min-h-[80vh] lg:min-h-[85vh] flex items-center overflow-hidden pt-20">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image

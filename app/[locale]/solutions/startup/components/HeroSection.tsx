@@ -10,7 +10,7 @@ export default function HeroSection({ onOpenContactModal }: HeroSectionProps) {
     return (
         <section
             data-hero
-            className="relative overflow-hidden min-h-[85vh] flex items-center -mt-0.5"
+            className="relative overflow-hidden min-h-[85vh] flex items-center pt-20"
             style={{ background: 'linear-gradient(135deg, #4988C4 0%, #4988C4 50%, #BDE8F5 100%)' }}
         >
             {/* Background decorations */}
@@ -92,9 +92,9 @@ export default function HeroSection({ onOpenContactModal }: HeroSectionProps) {
 
                             {/* Image container */}
                             <div className="relative bg-white/10 backdrop-blur-sm rounded-3xl p-6 border border-white/20">
-                                <div className="relative w-full max-w-[450px] aspect-square">
+                                <div className="relative w-[280px] h-[280px] sm:w-[350px] sm:h-[350px] lg:w-[450px] lg:h-[450px]">
                                     <Image
-                                        src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80"
+                                        src="/banner/startup-hero-clean.png"
                                         alt="Startup Solutions"
                                         fill
                                         className="object-cover rounded-2xl"

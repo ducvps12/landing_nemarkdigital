@@ -7,7 +7,7 @@ import ContactModal from '@/components/common/modal/ContactModal'
 export default function HeroSection() {
     const [isModalOpen, setIsModalOpen] = useState(false)
     return (
-        <section className="relative overflow-hidden min-h-[66vh] flex items-center">
+        <section data-hero className="relative overflow-hidden min-h-[66vh] flex items-center pt-20">
             {/* Cloud background */}
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"

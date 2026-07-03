@@ -170,13 +170,7 @@ export default function HeroSection({ onOpenContactModal }: HeroSectionProps) {
             />
 
             {/* Gradient Overlay - Left to Right */}
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-800/70 via-slate-800/50 to-slate-800/20" />
-
-            {/* Additional dark overlay for better text readability */}
-            <div className="absolute inset-0 bg-slate-800/15" />
-
-            {/* Subtle Pattern Overlay */}
-            <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5" />
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-transparent" />
 
             {/* Gradient Orbs for depth */}
             <div className="absolute top-1/4 left-1/4 w-[600px] h-[600px] rounded-full bg-primary/10 blur-[120px] animate-pulse" />

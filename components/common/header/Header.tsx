@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import LanguageSwitcher from './LanguageSwitcher'
@@ -376,6 +376,12 @@ export default function Header({ onOpenContactModal }: HeaderProps) {
 
                         {/* Menu Items */}
                         <nav className="px-6 pt-4 space-y-1">
+                            {/* Language Switcher for Mobile */}
+                            <div className="py-3 border-b border-slate-100 flex justify-between items-center mb-4">
+                                <span className="text-xs font-bold text-slate-500 uppercase tracking-widest">Language</span>
+                                <LanguageSwitcher />
+                            </div>
+
                             {/* TRANG CHỦ */}
                             <Link href="/" className="block text-sm font-medium text-slate-500 uppercase tracking-wide py-3" onClick={() => setMobileMenuOpen(false)}>{t('home')}</Link>
 

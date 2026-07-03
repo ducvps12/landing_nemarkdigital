@@ -22,39 +22,42 @@ export default function CareersPage() {
 
             <main className="flex flex-col items-center w-full">
                 {/* Hero Section */}
-                <div className="w-full relative overflow-hidden">
-                    <div className="absolute inset-0">
+                <div className="w-full relative overflow-hidden min-h-[60vh] flex items-center pt-20">
+                    {/* Background Image */}
+                    <div className="absolute inset-0 z-0">
                         <Image
                             src="/careers/hero.png"
                             alt="Careers at Nemark"
                             fill
                             className="object-cover"
+                            style={{ objectPosition: 'right 30%' }}
                             priority
                         />
-                        <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/90 to-primary/80" />
+                        {/* Gradient overlay: dark on the left for text readability, fading to transparent on the right */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/95 via-primary-dark/60 to-transparent" />
                     </div>
 
-                    <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-32 pt-40">
-                        <div className="max-w-3xl" data-aos="fade-up">
-                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6">
+                    <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-24 w-full">
+                        <div className="max-w-2xl" data-aos="fade-right">
+                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 leading-tight">
                                 {tHero('title')}
                             </h1>
-                            <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
+                            <p className="text-lg md:text-xl text-white/95 mb-8 leading-relaxed">
                                 {tHero('subtitle')}
                             </p>
                             <div className="flex flex-wrap gap-4">
                                 <a
                                     href="#positions"
-                                    className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary font-bold rounded-xl hover:bg-slate-100 transition-all shadow-lg"
+                                    className="inline-flex items-center gap-2 px-8 py-4 bg-white text-primary font-bold rounded-xl hover:bg-slate-100 transition-all shadow-lg hover:-translate-y-0.5"
                                 >
-                                    <span className="material-icons-outlined">work</span>
+                                    <span className="material-icons-outlined text-[20px]">work</span>
                                     <span>{tHero('viewPositions')}</span>
                                 </a>
                                 <a
                                     href="#culture"
-                                    className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 text-white font-bold rounded-xl border border-white/20 hover:bg-white/20 backdrop-blur-sm transition-all"
+                                    className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 text-white font-bold rounded-xl border border-white/20 hover:bg-white/20 backdrop-blur-sm transition-all hover:-translate-y-0.5"
                                 >
-                                    <span className="material-icons-outlined">groups</span>
+                                    <span className="material-icons-outlined text-[20px]">groups</span>
                                     <span>{tHero('companyCulture')}</span>
                                 </a>
                             </div>

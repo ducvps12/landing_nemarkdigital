@@ -10,7 +10,7 @@ export default function HeroSection({ onOpenContactModal }: HeroSectionProps) {
     return (
         <section
             data-hero
-            className="relative overflow-hidden min-h-[85vh] flex items-center -mt-0.5"
+            className="relative overflow-hidden min-h-[85vh] flex items-center pt-20"
             style={{ background: 'linear-gradient(135deg, #0077B6 0%, #0088cc 50%, #00a0e3 100%)' }}
         >
             {/* Background decorations */}

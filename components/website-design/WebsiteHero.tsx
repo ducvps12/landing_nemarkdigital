@@ -7,7 +7,7 @@ export default function WebsiteHero() {
     return (
         <section
             data-hero
-            className="relative min-h-[70vh] overflow-hidden bg-primary-darker"
+            className="relative min-h-[70vh] overflow-hidden bg-primary-darker pt-20"
         >
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#4988C4_1px,transparent_1px)] [background-size:20px_20px]" />

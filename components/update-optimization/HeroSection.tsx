@@ -11,7 +11,7 @@ interface HeroSectionProps {
 export default function HeroSection({ onOpenContactModal }: HeroSectionProps) {
     const [isModalOpen, setIsModalOpen] = useState(false)
     return (
-        <section className="relative overflow-hidden min-h-[70vh] flex items-center" style={{ background: 'linear-gradient(180deg, #BDE8F5 0%, #d4eff9 50%, #e8f6fc 100%)' }}>
+        <section data-hero className="relative overflow-hidden min-h-[80vh] lg:min-h-[85vh] flex items-center pt-20" style={{ background: 'linear-gradient(180deg, #BDE8F5 0%, #d4eff9 50%, #e8f6fc 100%)' }}>
             {/* Decorative curved lines - darker blue */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <svg className="absolute top-0 left-0 w-full h-full" preserveAspectRatio="none" viewBox="0 0 1440 600" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -141,18 +141,18 @@ export default function HeroSection({ onOpenContactModal }: HeroSectionProps) {
                                             </div>
                                         </div>
 
-                                        {/* Nemark Logo Badge */}
-                                        <div className="flex items-center justify-center gap-2 pt-2">
-                                            <div className="w-6 h-6 rounded-md flex items-center justify-center" style={{ background: '#4988C4' }}>
-                                                <span className="text-white text-xs font-bold">N</span>
-                                            </div>
-                                            <span className="text-sm font-semibold" style={{ color: '#1C4D8D' }}>Nemark Digital</span>
-                                        </div>
+                                         {/* Nemark Logo Badge */}
+                                         <div className="flex items-center justify-end gap-2 pt-2 pr-4">
+                                             <div className="w-6 h-6 rounded-md flex items-center justify-center" style={{ background: '#4988C4' }}>
+                                                 <span className="text-white text-xs font-bold">N</span>
+                                             </div>
+                                             <span className="text-sm font-semibold" style={{ color: '#1C4D8D' }}>Nemark Digital</span>
+                                         </div>
                                     </div>
                                 </div>
 
-                                {/* Floating stats card */}
-                                <div className="absolute -bottom-4 -left-4 rounded-xl p-4 shadow-lg bg-white border" style={{ borderColor: 'rgba(73,136,196,0.15)' }}>
+                                 {/* Floating stats card */}
+                                 <div className="absolute -bottom-2 -left-10 md:-left-12 rounded-xl p-4 shadow-lg bg-white border" style={{ borderColor: 'rgba(73,136,196,0.15)' }}>
                                     <div className="flex items-center gap-3">
                                         <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ background: 'rgba(73,136,196,0.1)' }}>
                                             <svg className="w-5 h-5" style={{ color: '#4988C4' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -7,7 +7,7 @@ import ContactModal from '@/components/common/modal/ContactModal'
 export default function HeroSection() {
     const [isModalOpen, setIsModalOpen] = useState(false)
     return (
-        <section className="relative bg-primary overflow-hidden min-h-[66vh] flex items-center ">
+        <section data-hero className="relative bg-primary overflow-hidden min-h-[66vh] flex items-center pt-20">
             {/* Background with subtle gradient */}
             <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary to-primary"></div>
 

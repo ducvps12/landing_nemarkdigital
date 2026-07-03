@@ -11,12 +11,14 @@ export default function HeroSection({ onOpenContactModal }: HeroSectionProps) {
     const t = useTranslations('aiToolsPage.hero')
 
     return (
-        <section className="relative pt-36 pb-24 md:pt-40 md:pb-32 bg-slate-950 overflow-hidden flex items-center min-h-[85vh]">
+        <section
+            className="relative pt-36 pb-24 md:pt-40 md:pb-32 overflow-hidden flex items-center min-h-[85vh]"
+            style={{ background: 'linear-gradient(135deg, #0f172a 0%, #0f172a 50%, #1e293b 100%)' }}
+        >
             {/* Decorative background gradients */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
                 <div className="absolute top-1/4 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl" />
                 <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl" />
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-slate-950/50 to-slate-950" />
             </div>
 
             {/* Content */}
@@ -57,7 +59,7 @@ export default function HeroSection({ onOpenContactModal }: HeroSectionProps) {
                     </div>
 
                     {/* Right Image */}
-                    <div className="lg:col-span-5 w-full flex justify-center lg:justify-end animate-fade-in" data-aos="fade-left">
+                    <div className="lg:col-span-5 w-full flex justify-center lg:justify-end animate-fade-in animate-float-delay" data-aos="fade-left">
                         <div className="relative w-full max-w-md md:max-w-lg aspect-square">
                             {/* Glow effect behind the image card */}
                             <div className="absolute -inset-1.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-[2rem] blur opacity-25" />
@@ -65,17 +67,36 @@ export default function HeroSection({ onOpenContactModal }: HeroSectionProps) {
                             {/* Image container */}
                             <div className="relative w-full h-full bg-slate-900 rounded-[2rem] overflow-hidden border border-slate-800 shadow-2xl">
                                 <Image
-                                    src="/banner/ai-tools-hero-v3.png"
+                                    src="/banner/ai-tools-hero-clean.png"
                                     alt="AI Tools Banner"
                                     fill
                                     className="object-cover"
                                     priority
                                 />
                             </div>
+
+                            {/* Floating badges */}
+                            <div className="absolute -top-3 -right-3 bg-blue-600 text-white px-4 py-2 rounded-full font-bold text-xs md:text-sm shadow-lg animate-float">
+                                GPT-5.5 & Gemini
+                            </div>
+                            <div className="absolute -bottom-3 -left-3 bg-white text-slate-900 px-4 py-2 rounded-full font-bold text-xs md:text-sm shadow-lg animate-float" style={{ animationDelay: '0.5s' }}>
+                                AI Integration
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            {/* Custom Animation Styles */}
+            <style jsx>{`
+                @keyframes float {
+                    0%, 100% { transform: translateY(0); }
+                    50% { transform: translateY(-10px); }
+                }
+                .animate-float {
+                    animation: float 3s ease-in-out infinite;
+                }
+            `}</style>
         </section>
     )
 }

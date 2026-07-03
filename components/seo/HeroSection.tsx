@@ -16,6 +16,7 @@ export default function HeroSection({ onOpenContactModal }: HeroSectionProps) {
                     alt="SEO Background"
                     fill
                     priority
+                    quality={95}
                     className="object-cover"
                 />
                 {/* Dark overlay for better text readability */}
